@@ -2,11 +2,141 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Экскурсии в каньон Седона</title>
   </head>
   <body>
+  	<header class="class">
+  		<!-- я так полагаю разделы в навигационном меню выстраиваем с помощью float, значит это маленькое лого будет вылезать из контейнера nav, получается нужно будет сделать псевдораспорку. Это так, небольшая креативность) -->
+       <nav class="navigation clearfix">
+       	<!--  логотип, маленькая картинка по середине навигации -->
+       	<img src="img/logo.jpg" alt"Логотип в навигации" width="50px" height="50px">
+       	 <ul class="menu-navigation-left">
+       	 	<!-- тут я вставил картинку layer, посмотрел в макете, каждая "кнопка" в навигации с прямоугольной картинкой -->
+       	 	<li><a href="information.html"><img src="img/layer1.img">Информация</a></li>
+       	 	<li><a href="photo-and-video.html"><img src="img/layer2.img">Фото и видео</a></li>
+       	 </ul>
+       	 <ul class="menu-navigation-right">
+       	 	<li><a href="map-of-state.html"><img src="img/layer2.img">Карта штата</a></li>
+       	 	<li><a href="hotel.html"><img src="img/layer2.img">Гостиницы</a></li>
+       	 </ul>
+       	 	<!-- сделал контейнер с дивом, изначально хотел <a> -->
+       	 	<div class="header-logo">
+       	 	   <img src="header-logo.jpg" alt="Главная картинка в шапке" width="300px" height="250px">
+       	 		<div class="welcome-img">
+       	 			<!-- тут картинка Welcome our site SEDONA, в макете посмотрел, это не надпись, а картинка -->
+       	 			<img src="img/welcome-logo.jpg">
+       	 		</div>
+       	 	</div>
+	   </nav>
+  	</header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+    <main class="container">
+      <div class="rubric-1">
+    <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+    <p>рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</p>
+      </div>
+      <section class="privilege">
+      	<div class="advantages">
+      	<h2 class="visually-hidden">Преимущества</h2>
+      	<ul class="real-city-list">
+      		<h3>Настоящий городк</h3>
+      		<!-- не знаю в какой тег обернуть этот №1 -->
+      		 <p>-№1-</p>
+      		 <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+      	</ul>
+      	<div class="city-png">
+      		<img src="img/real-city.png">
+      	</div>
+        </div>
+      	<div class="three-advantages">
+      		<ul class="advantages-list">
+      			<li class="advantages-item">
+      				<img src="home" alt="домик">
+      				<h3>Жилье</h3>
+      				<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+      			</li>
+      			<li class="advantages-item">
+      				<img src="burger" alt="бургер">
+      				<h3>Еда</h3>
+      				<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p></li>
+      			<li class="advantages-item">
+      				<img src="present" alt="сувениры">
+      				<h3>Сувениры</h3>
+      				<p>Не только китайского, но и местного производства!</p>
+      			</li>
+      		</ul>
+      	</div>
+      	<div class="advantages-2">
+      		<div class="stonebridge-png">
+      		    <img src="img/stonebridge.png">
+      	    </div>
+      	<ul class="bridge">
+      		<h3>Там есть мост дьявола</h3>
+      		<!-- не знаю в какой тег обернуть этот №2 -->
+      		 <p>-№2-</p>
+      		 <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+      	</ul>
+        </div>
+        <div class="three-advantages-2">
+             <ul class="advantages-list">
+         	     <li>
+         	     	<h3>Небольшая площадь</h3>
+         	     	<p>-№3-<p>
+         	     	<p>Все достопримечательности находятся очень близко</p>
+         	     </li>
+         	     <li>         	     	
+         	     	<h3>Красивая дорога</h3>
+         	     	<p>-№4-<p>
+         	     	<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+         	     </li>
+         	     <li>
+         	     	<h3>Мало туристов</h3>
+         	     	<p>-№5-</p>
+         	     	<p>Большинство едет в Гранд Каньон и толпится там</p>
+         	     </li>
+             </ul>
+        </div>
+      </section>
+      <section class="find-hotel">
+      	<div class="interest">
+      	<h2>Заинтересовались?</h2>
+      	<p>Укажите препологаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+        </div>
+        <div class="forma">
+        	<!--ссылку вставил на сайт html -->
+        	<form action="https://htmlacademy.ru/Feedback" method="get">
+        		<label for="arrival-date">дата заезда
+        		<input type="text" name="date" id="arrival-date">
+        	    </label><br>
 
+        	    <label for="turnout-date">дата вызаезда
+        		<input type="text" name="date" id="turnout-date">
+        	    </label><br>
+
+        	    <label for="old-people">Взрослые
+        	    <input type="number" size="1" name="number" min="1" max="665"  step="1" value="2">
+        	    </label>
+
+        	    <label for="kids">Дети
+        	    <input type="number" size="1" name="number" min="0" max="665"  step="1" value="2">
+        	    </label>
+        	    <a class="button" href="find-map.html">Найти</a>
+        	</form>
+        	<img src="img/map.img" width="300px" height="250px" alt="Карта каньона Седона">
+      </section>
+    </main>
+    <footer class="main-footer">
+    	<p class="hash-tag">#VISIT SEDONA</p>
+    	<div class="social-buttons">
+            <ul>
+            <li><a class="social" href="#twitter">Твиттер</a></li>
+            <li><a class="social" href="#facebook">Фейсбук</a></li>
+            <li><a class="social" href="#youtube">Ютуб</a></li>
+            </ul>
+        </div>
+    	<p class="footer-copyright">
+    		<a class=button href="https://htmlacademy.ru"<img src="img/copyright.img" alt="Сайт выполнен htmlacademy"></a>
+    	</p>
+    </footer>
   </body>
 </html>
