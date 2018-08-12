@@ -1,146 +1,185 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Экскурсии в каньон Седона</title>
-  </head>
-  <body>
-  	<header class="class">
-  		<!-- я так полагаю разделы в навигационном меню выстраиваем с помощью float, значит это маленькое лого будет вылезать из контейнера nav, получается нужно будет сделать псевдораспорку. Это так, небольшая креативность) -->
-       <nav class="navigation clearfix">
-       	<!--  логотип, маленькая картинка по середине навигации -->
-       	<img src="img/logo.jpg" alt="Логотип в навигации" width="50" height="50">
-       	 <ul class="menu-navigation-left">
-       	 	<!-- тут я вставил картинку layer, посмотрел в макете, каждая "кнопка" в навигации с прямоугольной картинкой -->
-       	 	<li><a href="information.html"><img src="img/layer1.img" alt="Кнопка информации">Информация</a></li>
-       	 	<li><a href="photo-and-video.html"><img src="img/layer2.img" alt="Кнопка фото и видео">Фото и видео</a></li>
-       	 </ul>
-       	 <ul class="menu-navigation-right">
-       	 	<li><a href="map-of-state.html"><img src="img/layer2.img" alt="Кнопка карта сайта">Карта штата</a></li>
-       	 	<li><a href="hotel.html"><img src="img/layer2.img" alt="Кнопка гостинницы">Гостиницы</a></li>
-       	 </ul>
-       	 	<!-- сделал контейнер с дивом, изначально хотел <a> -->
-       	 	<div class="header-logo">
-       	 	   <img src="header-logo.jpg" alt="Главная картинка в шапке" width="300" height="250">
-       	 		<div class="welcome-img">
-       	 			<!-- тут картинка Welcome our site SEDONA, в макете посмотрел, это не надпись, а картинка -->
-       	 			<img src="img/welcome-logo.jpg" alt="логотип приветствия">
-       	 		</div>
-       	 	</div>
-	   </nav>
-  	</header>
-    <main class="container">
-      <div class="rubric-1">
-    <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-    <p>рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</p>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Экскурсии в каньон Седона</title>
+</head>
+
+<body>
+  <header class="class">
+    <!-- я так полагаю разделы в навигационном меню выстраиваем с помощью float, значит это маленькое лого будет вылезать из контейнера nav, получается нужно будет сделать псевдораспорку. Это так, небольшая креативность) -->
+    <nav class="navigation">
+      <!--  логотип, маленькая картинка по середине навигации, !ссылку убрал! -->
+      <img src="img/logo.jpg" alt="Логотип в навигации" width="50" height="50">
+      <ul class="menu-navigation-left">
+        <li>
+          <a href="information.html">
+            <p>Информация</p>
+          </a>
+        </li>
+        <li>
+          <a href="photo-and-video.html">
+            <p>Фото и видео</p>
+          </a>
+        </li>
+        <li>
+          <a href="map-of-state.html">
+            <p>Карта штата</p>
+          </a>
+        </li>
+        <li>
+          <a href="hotel.html">
+            <p>Гостиницы</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <!--Это логотип в хедере, вывел из контейнера "nav", добавил в контейнер section в место div-->
+    <section class="header-logo">
+      <img src="header-logo.jpg" alt="Главная картинка в шапке" width="300" height="250">
+      <div class="welcome-img">
+        <img src="img/welcome-logo.jpg" alt="логотип приветствия">
       </div>
-      <section class="privilege">
-      	<div class="advantages">
-      	<h2 class="visually-hidden">Преимущества</h2>
-      	<ul class="real-city-list">
-      		<li>Настоящий городок</li>
-      		<!-- не знаю в какой тег обернуть этот №1 -->
-      		<li>-№1-</li>
-      		<li> Седона - не аттракцион для туристов, там течет своя жизнь</li>
-      	</ul>
-      	<div class="city-png">
-      		<img src="img/real-city.png" alt="Красивый отель">
-      	</div>
+    </section>
+    <div class="rubric-1">
+      <h1>Седона - небольшой городок в Аризоне,
+        <br> заслуживающий большего!</h1>
+      <p>рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</p>
+    </div>
+    <section class="privilege">
+      <div class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <!--Добавил в контейнер <div> до этого был в списке, ты написал, что это не список. Так же, обернул в <h3> и <p>-->
+        <div class="real-city-list">
+          <h3>Настоящий
+            <br> городок
+          </h3>
+          <!-- обернул в <p> до этого небыло тега -->
+          <p>-№1-</p>
+          <!-- тоже обернул в <p> до этого небыло тега -->
+          <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-      	<div class="three-advantages">
-      		<ul class="advantages-list">
-      			<li class="advantages-item">
-      				<img src="home" alt="домик">
-      				<h3>Жилье</h3>
-      				Рекомендуем пожить в настоящем мотеле, все как в кино!
-      			</li>
-      			<li class="advantages-item">
-      				<img src="burger" alt="бургер">
-      				<h3>Еда</h3>
-      				Всегда заказывайте фирменный бургер, вы не разочаруетесь!</li>
-      			<li class="advantages-item">
-      				<img src="present" alt="сувениры">
-      				<h3>Сувениры</h3>
-      				<p>Не только китайского, но и местного производства!</p>
-      			</li>
-      		</ul>
-      	</div>
-      	<div class="advantages-2">
-      		<div class="stonebridge-png">
-      		    <img src="img/stonebridge.png" alt="Кирпичный мост">
-      	    </div>
-      	<ul class="bridge">
-      		<li>Там есть мост дьявола</li>
-      		<!-- не знаю в какой тег обернуть этот №2 -->
-      		<li>-№2-</li>
-      		<li> Да, по нему можно пройти! Если конечно Вы осмелитесь</li>
-      	</ul>
+        <div class="city-png">
+          <img src="img/real-city.png" alt="Красивый отель">
         </div>
-        <div class="three-advantages-2">
-             <ul class="advantages-list">
-         	     <li>
-         	     	<h3>Небольшая площадь</h3>
-         	     	<p>-№3-<p>
-         	     	<p>Все достопримечательности находятся очень близко</p>
-         	     </li>
-         	     <li>         	     	
-         	     	<h3>Красивая дорога</h3>
-         	     	<p>-№4-<p>
-         	     	<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-         	     </li>
-         	     <li>
-         	     	<h3>Мало туристов</h3>
-         	     	<p>-№5-</p>
-         	     	<p>Большинство едет в Гранд Каньон и толпится там</p>
-         	     </li>
-             </ul>
+      </div>
+      <div class="three-advantages">
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <img src="home" alt="домик">
+            <h3>Жилье</h3>
+            Рекомендуем пожить в настоящем мотеле, все как в кино!
+          </li>
+          <li class="advantages-item">
+            <img src="burger" alt="бургер">
+            <h3>Еда</h3>
+            Всегда заказывайте фирменный бургер, вы не разочаруетесь!</li>
+          <li class="advantages-item">
+            <img src="present" alt="сувениры">
+            <h3>Сувениры</h3>
+            <p>Не только китайского, но и местного производства!</p>
+          </li>
+        </ul>
+      </div>
+      <!--отредактировал на тот класс, который в первом блоке-->
+      <div class="advantages">
+        <!--тот самый класс city-png которому я дал другой класс и ты сказал переделать-->
+        <div class="city-png">
+          <img src="img/stonebridge.png" alt="Кирпичный мост">
         </div>
-      </section>
-      <section class="find-hotel">
-      	<div class="interest">
-      	<h2>Заинтересовались?</h2>
-      	<p>Укажите препологаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+        <!-- тут мост про мост дьявола, раньше был вложен в тег <li> сменил на <div> обернул в <h3> и <p>-->
+        <div class="bridge">
+          <h3>Там есть
+            <br> мост дьявола</h3>
+          <p>-№2-</p>
+          <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
         </div>
-      </section>
-        <section class="form-site">
-        	<h2 class="visually-hidden">Форма выбора даты заезда и выезда, а так же количество людей</h2>
-        <div class="forma">
-        	<!--ссылку вставил на сайт html -->
-        	<form action="https://htmlacademy.ru/Feedback" method="get">
-        		<label for="arrival-date">дата заезда
-        		<input type="date" name="date" id="arrival-date">
-        	    </label><br>
+      </div>
+      <div class="three-advantages-2">
+        <ul class="advantages-list">
+          <li>
+            <h3>Небольшая
+              <br> площадь</h3>
+            <p>-№3-
+              <p>
+                <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li>
+            <h3>Красивая
+              <br> дорога</h3>
+            <p>-№4-
+              <p>
+                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li>
+            <h3>Мало
+              <br> туристов</h3>
+            <p>-№5-</p>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="find-hotel">
+      <div class="interest">
+        <h2>Заинтересовались?</h2>
+        <p>Укажите препологаемые даты поездки,
+          <br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+      </div>
+    </section>
+    <section class="button-form">
+      <h2 class="visually-hidden">Форма выбора даты заезда и выезда, а так же количество людей</h2>
+      <div class="forma">
+        <!--сделал кнопку с ссылкой на другую страницу с поиском отеля, хотел добавить якорь на другую страницу) но тег <a> нельзя вставлять в <button> валидатор конфликтует)-->
+        <form action="/index.html">
+          <button class="button-find">Поиск гостиницы в седоне</button>
+        </form>
+        <!--ссылку вставил на сайт htmlacademy -->
+        <form action="https://htmlacademy.ru/Feedback" method="get">
+          <label for="arrival-date">дата заезда
+            <input type="date" name="date" id="arrival-date">
+          </label>
+          <label for="turnout-date">дата вызаезда
+            <input type="date" name="date" id="turnout-date">
+          </label>
+          <label for="old-people">Взрослые
+            <input type="number" size="1" name="number" id="old-people" min="1" max="665" step="1" value="2">
+          </label>
 
-        	    <label for="turnout-date">дата вызаезда
-        		<input type="date" name="date" id="turnout-date">
-        	    </label><br>
+          <label for="kids">Дети
+            <input type="number" size="1" name="number" id="kids" min="0" max="665" step="1" value="2">
+          </label>
+          <a class="button" href="find-map.html">Найти</a>
+        </form>
+      </div>
+      <img src="img/map.img" width="300" height="250" alt="Карта каньона Седона">
+    </section>
+  </main>
+  <footer class="main-footer">
+    <p class="hash-tag">#VISIT SEDONA</p>
+    <div class="social-buttons">
+      <ul>
+        <li>
+          <a class="social" href="#twitter">Твиттер</a>
+        </li>
+        <li>
+          <a class="social" href="#facebook">Фейсбук</a>
+        </li>
+        <li>
+          <a class="social" href="#youtube">Ютуб</a>
+        </li>
+      </ul>
+    </div>
+    <p class="footer-copyright">
+      <a class=button href="https://htmlacademy.ru">
+        <img src="img/copyright.img" alt="Сайт выполнен htmlacademy">
+      </a>
+    </p>
+  </footer>
+</body>
 
-        	    <label for="old-people">Взрослые
-        	    <input type="number" size="1" name="number" id="old-people" min="1" max="665"  step="1" value="2">
-        	    </label>
-
-        	    <label for="kids">Дети
-        	    <input type="number" size="1" name="number" id="kids" min="0" max="665"  step="1" value="2">
-        	    </label>
-        	    <a class="button" href="find-map.html">Найти</a>
-        	</form>
-        	<img src="img/map.img" width="300" height="250" alt="Карта каньона Седона">
-        </div>
-      </section>
-    </main>
-    <footer class="main-footer">
-    	<p class="hash-tag">#VISIT SEDONA</p>
-    	<div class="social-buttons">
-            <ul>
-            <li><a class="social" href="#twitter">Твиттер</a></li>
-            <li><a class="social" href="#facebook">Фейсбук</a></li>
-            <li><a class="social" href="#youtube">Ютуб</a></li>
-            </ul>
-        </div>
-    	<p class="footer-copyright">
-    		<a class=button href="https://htmlacademy.ru"><img src="img/copyright.img" alt="Сайт выполнен htmlacademy"></a>
-    	</p>
-    </footer>
-  </body>
 </html>

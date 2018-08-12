@@ -1,138 +1,135 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Экскурсии в каньон Седона</title>
-  </head>
+
+<head>
+  <meta charset="utf-8">
   <link rel="stylesheet" href="css/style.css">
-  <body>
-  	<header class="class">
-       <nav class="navigation clearfix">
-       	<img src="img/logo.jpg" alt="Логотип в навигации" width="50" height="50">
-       	 <ul class="menu-navigation-left">
-       	 	<li><a href="information.html"><img src="img/layer1.img" alt="Картинка для кнопки">Информация</a></li>
-       	 	<li><a href="photo-and-video.html"><img src="img/layer2.img" alt="Картинка для кнопки">Фото и видео</a></li>
-       	 </ul>
-       	 <ul class="menu-navigation-right">
-       	 	<li><a href="map-of-state.html"><img src="img/layer2.img" alt="Картинка для кнопки">Карта штата</a></li>
-       	 	<li><a href="hotel.html"><img src="img/layer2.img" alt="Картинка для кнопки">Гостиницы</a></li>
-       	 </ul>
-        </nav>
-        </header>
-        <main class="choose-variant-hotel">
-       	 	<div class="header-img">
-             <img src="header-img.jpg" alt="Главная картинка в шапке" width="300" height="100">
-             <div class="choose-table">
-              <!-- Честно говоря, долго размышлял как сделать это меню, решил попробовать с помощью таблицы -->
-            <table>
-              <tr>
-              <th>Инфроструктура:</th>
-              <th>Тип Жилья:</th>
-              </tr>
-              <tr>
-                <td><form action="https://htmlacademy.ru/choose" method="get">
-                    <label for="pool">Бассейн
-                    <input type="checkbox" id="pool" name="pool">
-                     </label></form>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <form action="https://htmlacademy.ru/choose" method="get">
-                    <label for="hotel-place">Гостиница
-                    <input type="checkbox" id="hotel-place" name="hotel-place">
-                    </label></form>
-                </td>
-              </tr>
-              <tr>
-                <td><form action="https://htmlacademy.ru/choose" method="get">
-                    <label for="park-place">Парковка
-                    <input type="checkbox" id="park-place" name="park-place">
-                     </label></form>
-                </td>
-                <tr>
-                <td>
-                  <form action="https://htmlacademy.ru/choose" method="get">
-                    <label for="motel">Мотель
-                    <input type="checkbox" id="motel" name="motel">
-                  </label></form>
-                </td>
-              </tr>
-              <tr>
-                <td><form action="https://htmlacademy.ru/choose" method="get">
-                    <label for="Wi-Fi">Wi-Fi
-                    <input type="checkbox" id="Wi-Fi" name="Wi-Fi">
-                     </label></form>
-                </td>
-              <tr>
-                <td>
-                  <form action="https://htmlacademy.ru/choose" method="get">
-                    <label for="apartment">Апартаменты
-                    <input type="checkbox" id="apartment" name="apartment">
-                    </label>
-                  </form>
-                </td>
-              </tr>
-            </table>
-            <section class="costs">
-              <label for="costs-money">Стоимость в сутки(Р):</label>
-              <table class="costs-variant">
-                <tr>
-                  <th>От 0</th>
-                  <th>До 3000</th>
-                </tr>
-              </table>
-              <input type="range" value="100"  step="1" min="0" max="3000" id="costs-money"><br>
-              <!-- как правильно показать кнопку что бы отобразились варинты не знаю -->
-              <a class="button" href="show-variants">Показать</a>
-            </section>
-             </div>
-           </div>
-           <section class="options">
-           	<h2 class="visually-hidden">Результаты поиска отелей</h2>
-            <p>Найдено: 3</p>
-            <p>Сортировка:</p>
-            <ul class="results-find">
-              <li><a href="#Cost">По цене</a></li>
-              <li><a href="#type">По типу</a></li>
-              <li><a href="#rank">По рейтенгу</a></li>
-            </ul>
-            <hr>
-            <div class="varian-1">
-               <img src="varian1" alt="AMARA RESORT & SPA"><a href="#link-varian1">AMARA RESORT & SPA</a>
-                <p>Мотель от 4000р.</p>
-                <a class="button-blue" href="info">Подробнее</a>
-                <a class="button2-grow" href="reservation">Забронировать</a>
-                <div class="rating">Рейтинг: 8.5</div>
-            </div><hr>
-            <div class="varian-2">
-               <img src="varian2" alt="DESERT QUAIL INN"><a href="#link-varian1">DESERT QUAIL INN</a>
-                <p>Мотель от 3000р.</p>
-                <a class="button-blue" href="info">Подробнее</a>
-                <a class="button2-grow" href="reservation">Забронировать</a>
-                <div class="rating">Рейтинг: 8.9</div>
-            </div><hr>
-            <div class="varian-3">
-               <img src="varian3" alt="VILLAS AT POCO DIABLO"><a href="#link-varian1">AMARA RESORT & SPA</a>
-                <p>Мотель от 2000р.</p>
-                <a class="button-blue" href="info">Подробнее</a>
-                <a class="button2-grow" href="reservation">Забронировать</a>
-                <div class="rating">Рейтинг: 9.2</div>
-            </div><hr>
-          </section>
-        </main>
-             <footer class="main-footer">
-      <p class="hash-tag">#VISIT SEDONA</p>
-      <div class="social-buttons">
-            <ul>
-            <li><a class="social" href="#twitter">Твиттер</a></li>
-            <li><a class="social" href="#facebook">Фейсбук</a></li>
-            <li><a class="social" href="#youtube">Ютуб</a></li>
-            </ul>
+  <title>Экскурсии в каньон Седона</title>
+</head>
+
+<body>
+  <header class="class">
+    <nav class="navigation clearfix">
+      <!--обернул логотип на второй странице в ссылку на главную страницу-->
+      <a href="/index.html" alt="логотип">
+        <img src="img/logo.jpg" alt="Логотип в навигации" width="50" height="50">
+      </a>
+      <ul class="menu-navigation-left">
+        <li>
+          <a href="information.html">
+            <img src="img/layer1.img" alt="Картинка для кнопки">Информация</a>
+        </li>
+        <li>
+          <a href="photo-and-video.html">
+            <img src="img/layer2.img" alt="Картинка для кнопки">Фото и видео</a>
+        </li>
+      </ul>
+      <ul class="menu-navigation-right">
+        <li>
+          <a href="map-of-state.html">
+            <img src="img/layer2.img" alt="Картинка для кнопки">Карта штата</a>
+        </li>
+        <li>
+          <a href="hotel.html">
+            <img src="img/layer2.img" alt="Картинка для кнопки">Гостиницы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="choose-variant-hotel">
+    <div class="header-img">
+      <img src="header-img.jpg" alt="Главная картинка в шапке" width="300" height="100">
+      <div class="choose-table">
+        <section class="costs">
+          <label for="costs-money">Стоимость в сутки(Р):</label>
+          <table class="costs-variant">
+            <tr>
+              <th>От 0</th>
+              <th>До 3000</th>
+            </tr>
+          </table>
+          <input type="range" value="100" step="1" min="0" max="3000" id="costs-money">
+          <br>
+          <!-- как правильно показать кнопку что бы отобразились варинты не знаю -->
+          <a class="button" href="show-variants">Показать</a>
+        </section>
+      </div>
+    </div>
+    <section class="options">
+      <h2 class="visually-hidden">Результаты поиска отелей</h2>
+      <p>Найдено: 3</p>
+      <p>Сортировка:</p>
+      <ul class="results-find">
+        <li>
+          <a href="#Cost">По цене</a>
+        </li>
+        <li>
+          <a href="#type">По типу</a>
+        </li>
+        <li>
+          <a href="#rank">По рейтенгу</a>
+        </li>
+      </ul>
+      <!--Добавил две кнопки, которые обозначают по возростанию и убыванию, думал может как картинки вставить ссылками?
+        Просто, не знаю как сделать, если кнопки, что бы при кликании работали по назначению-->
+      <input type="button" value="up">
+      <input type="button" value="down">
+      <hr>
+      <section class="hotel-list ">
+        <!--Одинаковый класс-->
+        <div class="varian ">
+          <img src="varian1 " alt="AMARA RESORT & SPA ">
+          <a href="#link-varian1 ">AMARA RESORT & SPA</a>
+          <p>Мотель от 4000р.</p>
+          <a class="button-blue " href="info ">Подробнее</a>
+          <a class="button2-grow " href="reservation ">Забронировать</a>
+          <div class="rating ">Рейтинг: 8.5</div>
         </div>
-      <p class="footer-copyright">
-        <a class=button href="https://htmlacademy.ru"><img src="img/copyright.img" alt="Сайт выполнен htmlacademy"></a>
-      </p>
-    </footer>
-  </body>
+        <hr>
+        <!--Одинаковый класс-->
+        <div class="varian ">
+          <img src="varian2 " alt="DESERT QUAIL INN ">
+          <a href="#link-varian1 ">DESERT QUAIL INN</a>
+          <p>Мотель от 3000р.</p>
+          <a class="button-blue " href="info ">Подробнее</a>
+          <a class="button2-grow " href="reservation ">Забронировать</a>
+          <div class="rating ">Рейтинг: 8.9</div>
+        </div>
+        <hr>
+        <!--Одинаковый класс-->
+        <div class="varian ">
+          <img src="varian3 " alt="VILLAS AT POCO DIABLO ">
+          <a href="#link-varian1 ">AMARA RESORT & SPA</a>
+          <p>Мотель от 2000р.</p>
+          <a class="button-blue " href="info ">Подробнее</a>
+          <a class="button2-grow " href="reservation ">Забронировать</a>
+          <div class="rating ">Рейтинг: 9.2</div>
+        </div>
+        <hr>
+      </section>
+    </section>
+  </main>
+  <footer class="main-footer ">
+    <p class="hash-tag ">#VISIT SEDONA</p>
+    <div class="social-buttons ">
+      <ul>
+        <li>
+          <a class="social " href="#twitter ">Твиттер</a>
+        </li>
+        <li>
+          <a class="social " href="#facebook ">Фейсбук</a>
+        </li>
+        <li>
+          <a class="social " href="#youtube ">Ютуб</a>
+        </li>
+      </ul>
+    </div>
+    <p class="footer-copyright ">
+      <a class=button href="https://htmlacademy.ru ">
+        <img src="img/copyright.img " alt="Сайт выполнен htmlacademy ">
+      </a>
+    </p>
+  </footer>
+</body>
+
 </html>
