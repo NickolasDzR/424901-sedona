@@ -12,7 +12,7 @@
     <nav class="navigation clearfix">
       <!--обернул логотип на второй странице в ссылку на главную страницу-->
       <a href="/index.html" alt="логотип">
-        <img src="img/logo.jpg" alt="Логотип в навигации" width="50" height="50">
+        <img src="img/logo.jpg" alt="Логотип в навигации">
       </a>
       <ul class="menu-navigation-left">
         <li>
@@ -37,10 +37,12 @@
     </nav>
   </header>
   <main class="choose-variant-hotel">
-    <div class="header-img">
-      <img src="header-img.jpg" alt="Главная картинка в шапке" width="300" height="100">
+    <section class="filtering">
+      <h2 class="visually-hidden">Поиск отелей по типу</h2>
+      <img src="header-img.jpg" alt="Главная картинка в шапке">
       <div class="choose-table">
         <section class="costs">
+            <h2 class="visually-hidden">Форма выбора стоимости отеля от меньшему к большему</h2>
           <label for="costs-money">Стоимость в сутки(Р):</label>
           <table class="costs-variant">
             <tr>
@@ -54,7 +56,7 @@
           <a class="button" href="show-variants">Показать</a>
         </section>
       </div>
-    </div>
+    </section>
     <section class="options">
       <h2 class="visually-hidden">Результаты поиска отелей</h2>
       <p>Найдено: 3</p>
@@ -69,44 +71,42 @@
         <li>
           <a href="#rank">По рейтенгу</a>
         </li>
+        <li>
+          <a href="#rank">По возростанию</a>
+        </li>
+        <li>
+          <a href="#rank">По убыванию</a>
+        </li>
       </ul>
-      <!--Добавил две кнопки, которые обозначают по возростанию и убыванию, думал может как картинки вставить ссылками?
-        Просто, не знаю как сделать, если кнопки, что бы при кликании работали по назначению-->
-      <input type="button" value="up">
-      <input type="button" value="down">
-      <hr>
-      <section class="hotel-list ">
+      <div class="hotel-list ">
         <!--Одинаковый класс-->
-        <div class="varian ">
-          <img src="varian1 " alt="AMARA RESORT & SPA ">
+        <div class="variant">
+          <img src="variant" alt="AMARA RESORT & SPA">
           <a href="#link-varian1 ">AMARA RESORT & SPA</a>
           <p>Мотель от 4000р.</p>
           <a class="button-blue " href="info ">Подробнее</a>
           <a class="button2-grow " href="reservation ">Забронировать</a>
           <div class="rating ">Рейтинг: 8.5</div>
         </div>
-        <hr>
         <!--Одинаковый класс-->
-        <div class="varian ">
-          <img src="varian2 " alt="DESERT QUAIL INN ">
+        <div class="variant">
+          <img src="variant" alt="DESERT QUAIL INN">
           <a href="#link-varian1 ">DESERT QUAIL INN</a>
           <p>Мотель от 3000р.</p>
           <a class="button-blue " href="info ">Подробнее</a>
           <a class="button2-grow " href="reservation ">Забронировать</a>
           <div class="rating ">Рейтинг: 8.9</div>
         </div>
-        <hr>
         <!--Одинаковый класс-->
-        <div class="varian ">
-          <img src="varian3 " alt="VILLAS AT POCO DIABLO ">
+        <div class="variant">
+          <img src="variant " alt="VILLAS AT POCO DIABLO">
           <a href="#link-varian1 ">AMARA RESORT & SPA</a>
           <p>Мотель от 2000р.</p>
           <a class="button-blue " href="info ">Подробнее</a>
           <a class="button2-grow " href="reservation ">Забронировать</a>
           <div class="rating ">Рейтинг: 9.2</div>
         </div>
-        <hr>
-      </section>
+      </div>
     </section>
   </main>
   <footer class="main-footer ">
