@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/style.css">
   <title>Экскурсии в каньон Седона</title>
 </head>
-
 <body>
   <header class="class">
     <nav class="navigation">
@@ -16,22 +14,22 @@
       <ul class="menu-navigation-left">
         <li>
           <a href="information.html">
-            <p>Информация</p>
+            Информация
           </a>
         </li>
         <li>
           <a href="photo-and-video.html">
-            <p>Фото и видео</p>
+            Фото и видео
           </a>
         </li>
         <li>
           <a href="map-of-state.html">
-            <p>Карта штата</p>
+            Карта штата
           </a>
         </li>
         <li>
           <a href="hotel.html">
-            <p>Гостиницы</p>
+            Гостиницы
           </a>
         </li>
       </ul>
@@ -45,20 +43,17 @@
     </section>
     <section class="rubric-1">
       <h1>Седона - небольшой городок в Аризоне,<br>
-         заслуживающий большего!</h1>
-      <p>рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!
-      </p>
+          заслуживающий большего!
+      </h1>
+      <p>рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</p>
     </section>
     <div class="privilege">
-      <div class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
       </div>
       <div class="real-city-list">
         <h3>Настоящий городок
         </h3>
-        <!-- обернул в <p> до этого небыло тега -->
         <p>-№1-</p>
-        <!-- тоже обернул в <p> до этого небыло тега -->
         <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
       </div>
       <div class="city-png">
@@ -70,13 +65,12 @@
         <li class="advantages-item">
           <img src="home" alt="домик">
           <h3>Жилье</h3>
-          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!
-          </p>
+          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </li>
         <li class="advantages-item">
           <img src="burger" alt="бургер">
           <h3>Еда</h3>
-          Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
         <li class="advantages-item">
           <img src="present" alt="сувениры">
@@ -85,16 +79,14 @@
         </li>
       </ul>
     </div>
-    <!--отредактировал на тот класс, который в первом блоке-->
     <div class="advantages">
-      <!--тот самый класс city-png которому я дал другой класс и ты сказал переделать-->
       <div class="city-png">
         <img src="img/stonebridge.png" alt="Кирпичный мост">
       </div>
-      <!-- тут мост про мост дьявола, раньше был вложен в тег <li> сменил на <div> обернул в <h3> и <p>-->
       <div class="bridge">
         <h3>Там есть<br>
-          мост дьявола</h3>
+          мост дьявола
+        </h3>
         <p>-№2-</p>
         <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
       </div>
@@ -103,23 +95,22 @@
       <ul class="advantages-list">
         <li>
           <h3>Небольшая<br>
-             площадь
+              площадь
           </h3>
-          <p>-№3-
-          </p>
-          <p>Все достопримечательности находятся очень близко
-          </p>
+          <p>-№3-</p>
+          <p>Все достопримечательности находятся очень близко</p>
         </li>
         <li>
           <h3>Красивая<br>
-             дорога</h3>
-          <p>-№4-
-            <p>
-              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              дорога
+          </h3>
+          <p>-№4-</p>
+          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
         <li>
           <h3>Мало<br>
-             туристов</h3>
+             туристов
+          </h3>
           <p>-№5-</p>
           <p>Большинство едет в Гранд Каньон и толпится там</p>
         </li>
@@ -129,28 +120,29 @@
       <div class="interest">
         <h2>Заинтересовались?</h2>
         <p>Укажите препологаемые даты поездки,<br>
-           и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+           и мы покажем Вам лучшие предложения гостиниц в Седоне
+        </p>
+        <div class="forma">
+          <button class="button-find">Поиск гостиницы в седоне</button>
+          <form action="https://htmlacademy.ru/Feedback" method="get">
+            <label for="arrival-date">дата заезда
+              <input type="date" name="date" id="arrival-date">
+            </label>
+            <label for="turnout-date">дата вызаезда
+              <input type="date" name="date" id="turnout-date">
+            </label>
+            <label for="old-people">Взрослые
+              <input type="number" size="1" name="number" id="old-people" min="1" max="665" step="1" value="2">
+            </label>
+            <label for="kids">Дети
+              <input type="number" size="1" name="number" id="kids" min="0" max="665" step="1" value="2">
+            </label>
+            <a class="button" href="find-map.html">Найти</a>
+          </form>
+        </div>
       </div>
     </section>
     <h2 class="visually-hidden">Форма выбора даты заезда и выезда, а так же количество людей</h2>
-    <div class="forma">
-      <button class="button-find">Поиск гостиницы в седоне</button>
-      <form action="https://htmlacademy.ru/Feedback" method="get">
-        <label for="arrival-date">дата заезда
-          <input type="date" name="date" id="arrival-date">
-        </label>
-        <label for="turnout-date">дата вызаезда
-          <input type="date" name="date" id="turnout-date">
-        </label>
-        <label for="old-people">Взрослые
-          <input type="number" size="1" name="number" id="old-people" min="1" max="665" step="1" value="2">
-        </label>
-        <label for="kids">Дети
-          <input type="number" size="1" name="number" id="kids" min="0" max="665" step="1" value="2">
-        </label>
-        <a class="button" href="find-map.html">Найти</a>
-      </form>
-    </div>
     <div class="sedon-map">
       <img src="img/map.img" width="300" height="250" alt="Карта каньона Седона">
     </div>
@@ -171,11 +163,10 @@
       </ul>
     </div>
     <p class="footer-copyright">
-      <a class=button href="https://htmlacademy.ru">
+      <a class="button" href="https://htmlacademy.ru">
         <img src="img/copyright.img" alt="Сайт выполнен htmlacademy">
       </a>
     </p>
   </footer>
 </body>
-
 </html>
