@@ -30,22 +30,41 @@
   <main class="choose-variant-hotel">
     <section class="filtering">
       <h2 class="visually-hidden">Поиск отелей по типу</h2>
-      <img src="img/filter-background.jpg" width="768" height="512" alt="Главная картинка в шапке">
-      <div class="choose-table">
-        <section class="costs">
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <div class="row">
+          <div class="col">
+            <h3 class="infrostructure">Инфраструктура</h3>
+            <label id="pool">
+              <input type="checkbox" name="radio-infro" value="pool">Бассейн</label>
+            <label id="park-place">
+              <input type="checkbox" name="radio-infro" value="park-place">Парковка</label>
+            <label id="wi-fi">
+              <input type="checkbox" name="radio-infro" value="wi-fi">Wi-Fi</label>
+          </div>
+          <div class="col">
+            <h3 class="infrostructure">Тип Жилья</h3>
+            <label id="hostel">
+              <input type="checkbox" name="radio-type" value="pool">Гостиница</label>
+            <label id="motel">
+              <input type="checkbox" name="radio-type" value="motel">Мотель</label>
+            <label id="apartment">
+              <input type="checkbox" name="radio-type" value="apartment">Апартаменты</label>
+          </div>
+          <div class="col">
             <h2 class="visually-hidden">Форма выбора стоимости отеля от меньшему к большему</h2>
-          <label for="costs-money">Стоимость в сутки(Р):</label>
-          <table class="costs-variant">
-            <tr>
-              <th>От 0</th>
-              <th>До 3000</th>
-            </tr>
-          </table>
-          <input type="range" value="100" step="1" min="0" max="3000" id="costs-money">
-          <br>
-          <a class="button" href="show-variants">Показать</a>
-        </section>
-      </div>
+            <label for="costs-money">Стоимость в сутки(Р):</label>
+            <table class="costs-variant">
+              <tr>
+                <th>От 0</th>
+                <th>До 3000</th>
+              </tr>
+            </table>
+            <input type="range" value="100" step="1" min="0" max="3000" id="costs-money">
+            <br>
+            <button type="submit">Показать</button>
+          </div>
+        </div>
+      </form>
     </section>
     <section class="options">
       <h2 class="visually-hidden">Результаты поиска отелей</h2>
@@ -113,6 +132,7 @@
     </div>
     <p class="footer-copyright">
       <a class="button" href="https://htmlacademy.ru">
+        <span>Website by</span>
         <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Сайт выполнен htmlacademy">
       </a>
     </p>
