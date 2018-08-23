@@ -4,14 +4,11 @@ body {
 
   font-family: 'PT Sans', sans-serif;
   font-size: 14px;
-  line-height: 21px;
-  font-weight: 700;
   color: #696969;
   text-transform: uppercase;
 
 
   background-color: #f2f2f2;
-  background-image: url("img/background.jpg");
   background-position: top center;
   background-repeat: repeat;
 }
@@ -21,15 +18,52 @@ a {
   color: #000000;
 }
 
-.visually-hidden {
-  display: none;
+.header-logo {
+  background-image: url(../img/background-photo.png);
+  background-repeat: no-repeat;
 }
 
-.menu-navigation-left,
-.menu-navigation, {
+section.filtering {
+  background-image: url(../img/filter-background.jpg);
+  background-repeat: no-repeat;
+}
+
+.main-menu-navigation {
+  list-style: none;
+  font-size: 14px;
+}
+
+.menu-navigation {
   list-style: none;
   font-size: 14px;
   color: #ffffff;
+}
+
+.navigation {
+  background-color: #fff;
+}
+
+.choose-variant-hotel,
+.main-footer {
+  background-color: #fff;
+}
+
+.real-city-list,
+.bridge {
+  background-color: #81b3d2;
+}
+
+.three-advantages,
+.interest {
+  background-color: #fff;
+}
+
+.three-advantages-2 {
+  background-color: #eeeeee;
+}
+
+.main-footer {
+  background-color: rgba(249, 251, 246, 0.5)
 }
 
 .rubric-1 h1,
@@ -37,6 +71,7 @@ a {
 .advantages-list h3,
 .interest h2 {
   font-size: 21px;
+  line-height: 26px;
   color: #171717;
 }
 
@@ -46,6 +81,7 @@ a {
 .interest p {
   font-size: 14px;
   color: #a9a9a9;
+  line-height: 21px;
 }
 
 
@@ -63,7 +99,146 @@ a {
   color: #ffffff;
 }
 
-.social-buttons {
+div.forma {
+  background-color: #ffffff;
+}
+
+.social-cont ul {
   list-style: none;
 }
+
+.variant a {
+  font-size: 21px;
+  font-weight: bold
+}
+
+.row {
+  color: #fff;
+}
+
+.col {
+  font-size: 14px;
+}
+
+.col:nth-child(3) label {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.costs-variant th {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.infrostructure {
+  font-size: 16px;
+}
+
+a.button-blue {
+  display: inline-block;
+  padding: 8px 17px;
+  font-size: 14px;
+  background-color: #82b3d3;
+  color: #fff;
+}
+
+.social-buttons a {
+  display: inline-block;
+  font-size: 14px;
+  background-color: #82b3d3;
+  color: #fff;
+}
+
+a.button-grow {
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 16px;
+  background-color: #766257;
+  color: #fff;
+}
+
+.results-find li {
+  list-style: none;
+}
+
+.results-find a{
+  border-bottom: 1px dashed #81b3d2;
+  font-size: 12px;
+  color: #e8e8e8;
+}
+
+.hash-tag {
+  font-weight: bold;
+  font-size: 21px;
+  color: #000;
+}
+
+.col button {
+  background-color: Transparent;
+  color: #fff;
+}
+
+.button-find {
+  font-size: 21px;
+  padding: 34px 140px;
+  background-color: #766257;
+  color: #e9e7e5;
+}
+
+.forma button:last-child {
+  font-size: 21px;
+  padding: 21px 196px;
+  background-color: #81b3d2;
+  color: #e9e7e5;
+}
+
+.button-blue:hover,
+.forma button:last-child:hover {
+  background-color: #669ebf;
+}
+.button-grow:hover,
+.button-find:hover {
+  background-color: #604e44;
+}
+div.col button:hover {
+  background-color: #fff;
+  color: #000;
+}
+.information-hover:hover,
+.variant a:hover, {
+  color: #81b3d2;
+}
+.for-rank:hover {
+  color: #81b3d2;
+}
+.results-find a:hover {
+  border-bottom: 0px;
+}
+
+.button-blue:active,
+.forma button:last-child:active {
+  background-color: #5596be;
+  color: #80aecb;
+}
+.button-grow:active,
+.button-find:active {
+  background-color: #503e32;
+  color: #817670;
+}
+
+.information-hover:active,
+.variant a:active, {
+  color: #e1e1e1;
+}
+.for-rank:active {
+  color: #000;
+}
+
+.information-hover:visited {
+  color: #a69a93;
+}
+.for-cost:visited {
+  color: #a69a93;
+}
+
 

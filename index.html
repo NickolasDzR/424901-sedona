@@ -2,8 +2,9 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/style.css">
   <title>Экскурсии в каньон Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="class">
@@ -11,9 +12,9 @@
       <a>
         <img src="img/logo-sedona.svg" width="140" height="70" alt="логотип сайта">
       </a>
-      <ul class="menu-navigation-left">
+      <ul class="main-menu-navigation">
         <li>
-          <a href="information.html">
+          <a class="information-hover" href="information.html">
             Информация
           </a>
         </li>
@@ -42,17 +43,17 @@
       </div>
     </section>
     <section class="rubric-1">
-      <h1>Седона - небольшой городок в Аризоне,<br>
+      <h1>Седона — небольшой городок в Аризоне,<br>
         заслуживающий большего!
       </h1>
-      <p>рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</p>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
     <div class="privilege">
       <h2 class="visually-hidden">Преимущества</h2>
       <div class="real-city-list">
         <h3>Настоящий городок</h3>
-        <p>-№1-</p>
-        <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+        <p>— №1 —</p>
+        <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
       </div>
       <div class="city-png">
         <img src="img/hotel.jpg" width="512" height="256" alt="Красивый отель">
@@ -62,8 +63,8 @@
       <ul class="advantages-list">
         <li class="advantages-item">
           <img src="img/home.svg" width="72" height="75" alt="домик">
-          <h3>Жилье</h3>
-          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          <h3>Жильё</h3>
+          <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </li>
         <li class="advantages-item">
           <img src="img/burger.svg" width="70" height="74" alt="бургер">
@@ -83,63 +84,62 @@
       </div>
       <div class="bridge">
         <h3>Там есть<br>
-         мост дьявола
+          Мост дьявола
         </h3>
-        <p>-№2-</p>
-        <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+        <p>— №2 —</p>
+        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </div>
     </div>
     <div class="three-advantages-2">
       <ul class="advantages-list">
         <li>
           <h3>Небольшая<br>
-             площадь
-          </h3>
-          <p>-№3-</p>
+             площадь</h3>
+          <p>— №3 —</p>
           <p>Все достопримечательности находятся очень близко</p>
         </li>
         <li>
           <h3>Красивая<br>
-            дорога
+             дорога
           </h3>
-          <p>-№4-</p>
+          <p>— №4 —</p>
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
         <li>
-          <h3>Мало
-            <br> туристов
+          <h3>Мало<br>
+            туристов
           </h3>
-          <p>-№5-</p>
-          <p>Большинство едет в Гранд Каньон и толпится там</p>
+          <p>— №5 —</p>
+          <p>Большинство едет в Гранд каньон и толпится там</p>
         </li>
       </ul>
     </div>
     <section class="find-hotel">
       <div class="interest">
         <h2>Заинтересовались?</h2>
-        <p>Укажите препологаемые даты поездки,
-          <br> и мы покажем Вам лучшие предложения гостиниц в Седоне
+        <p>Укажите предполагаемые даты поездки,
+          <br> и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
         <div class="forma">
-          <button type="button" class="button-find">Поиск гостиницы в седоне</button>
+          <button type="button" class="button-find">Поиск гостиницы в Седоне</button>
           <form action="https://htmlacademy.ru/Feedback" method="get">
             <p class="form-group">
-              <label for="arrival-date">Дата заезда
+              <label for="arrival-date">Дата заезда:
                 <input type="text" name="date-arrival" id="arrival-date">
               </label>
             </p>
             <p class="form-group">
-              <label for="turnout-date">Дата вызаезда
+              <label for="turnout-date">Дата выезда:
                 <input type="text" name="date-turnout" id="turnout-date">
               </label>
             </p>
             <p class="form-group">
-              <label for="old-people">Взрослые
+              <label for="old-people">Взрослые:
                 <input type="number" size="1" name="number" id="old-people" min="1" max="665" step="1" value="2">
               </label>
             </p>
             <p class="form-group">
-              <label for="kids">Дети
+              <label for="kids">Дети:
                 <input type="number" size="1" name="number" id="kids" min="0" max="665" step="1" value="2">
               </label>
             </p>
@@ -156,7 +156,7 @@
     </section>
   </main>
   <footer class="main-footer">
-    <p class="hash-tag">#VISIT SEDONA</p>
+    <p class="hash-tag">#visitSEDONA</p>
     <div class="social-cont">
       <ul class="social-buttons">
         <li>
