@@ -285,9 +285,7 @@ svg {
 
 .button:hover svg {
   fill: #81b3d2;
-  color: #81b3d2;
 }
 .button:active svg {
   fill: #bdbbbc;
-  color: #bdbbbc;
 }
