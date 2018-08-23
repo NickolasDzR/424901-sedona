@@ -277,20 +277,17 @@ a.social:active {
 a.social:active img {
   opacity: .3;
 }
-
 svg {
   width: 115px;
   height: 41px;
   fill: #231f20;
 }
 
-svg:hover{
+.button:hover svg {
   fill: #81b3d2;
   color: #81b3d2;
 }
-
-svg:active {
+.button:active svg {
   fill: #bdbbbc;
   color: #bdbbbc;
-
 }
