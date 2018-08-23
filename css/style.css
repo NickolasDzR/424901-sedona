@@ -274,7 +274,31 @@ a.social:hover {
 a.social:active {
   background-color: #5596be;
 }
-
-a.social:active img{
+a.social:active img {
   opacity: .3;
+}
+
+svg {
+  width: 115px;
+  height: 41px;
+  fill: #231f20;
+}
+
+svg:hover{
+  fill: #81b3d2;
+  color: #81b3d2;
+}
+
+svg:active {
+  fill: #bdbbbc;
+  color: #bdbbbc;
+
+}
+
+a.phrase:hover{
+  color: #81b3d2;
+}
+
+a.phrase:active{
+  color: #bdbbbc;
 }
