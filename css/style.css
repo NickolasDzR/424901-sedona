@@ -280,7 +280,7 @@ a {
 .information-hover:active,
 .photo-and-video:active,
 .map-state:active,
-.hotels:hover,
+.hotels:active,
 .variant:active {
   color: rgba(0, 0, 0, 0.3);
 }
