@@ -210,7 +210,7 @@ a.button-grow {
   font-size: 21px;
   padding: 30px 138px;
   background-color: #766257;
-  color: #e9e7e5;
+  color: #ffffff;
 }
 
 .show-variant {
@@ -219,7 +219,7 @@ a.button-grow {
   font-size: 21px;
   padding: 15px 195px;
   background-color: #81b3d2;
-  color: #e9e7e5;
+  color: #fff;
 }
 
 .col button:hover {
@@ -243,13 +243,13 @@ a.button-grow {
 a.button-blue:hover,
 .show-variant:hover {
   background-color: #669ebf;
-  color: #dbe7ef;
+  color: #fff;
 }
 
 a.button-grow:hover,
 .button-find:hover {
   background-color: #604e44;
-  color: #dbe7ef;
+  color: #fff;
 }
 
 a.button-blue:active,
