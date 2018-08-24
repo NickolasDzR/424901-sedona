@@ -4,7 +4,7 @@ body {
 
   font-family: 'PT Sans', sans-serif;
   font-size: 14px;
-  color: #696969;
+  color: #0c0c0c;
   text-transform: uppercase;
 
 
@@ -86,6 +86,17 @@ a {
   color: #171717;
 }
 
+.sorting {
+  font-size: 12px;
+}
+
+.result-finds {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: #171717;
+}
+
 .interest h2 {
   font-size: 30px;
   line-height: 26px;
@@ -96,7 +107,7 @@ a {
 .advantages-list p,
 .interest p {
   font-size: 14px;
-  color: #a9a9a9;
+  color: #0c0c0c;
   line-height: 21px;
 }
 
@@ -151,7 +162,7 @@ a {
 
 a.button-blue {
   display: inline-block;
-  padding: 8px 17px;
+  padding: 6px 17px;
   font-size: 14px;
   background-color: #82b3d3;
   color: #fff;
@@ -167,7 +178,7 @@ a.button-blue {
 a.button-grow {
   display: inline-block;
   font-size: 14px;
-  padding: 8px 16px;
+  padding: 6px 17px;
   background-color: #766257;
   color: #fff;
 }
@@ -197,7 +208,7 @@ a.button-grow {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 21px;
-  padding: 26px 126px;
+  padding: 30px 138px;
   background-color: #766257;
   color: #e9e7e5;
 }
@@ -206,7 +217,7 @@ a.button-grow {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 21px;
-  padding: 14px 176px;
+  padding: 15px 195px;
   background-color: #81b3d2;
   color: #e9e7e5;
 }
