@@ -240,7 +240,6 @@ a {
 .information-hover:hover,
 .photo-and-video:hover,
 .map-state:hover,
-.hotels:hover,
 .variant:hover {
   color: #81b3d2;
 }
@@ -280,7 +279,6 @@ a {
 .information-hover:active,
 .photo-and-video:active,
 .map-state:active,
-.hotels:active,
 .variant:active {
   color: rgba(0, 0, 0, 0.3);
 }
