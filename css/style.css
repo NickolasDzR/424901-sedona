@@ -1,14 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: 'PT Sans', sans-serif;
   font-size: 14px;
-  color: #0c0c0c;
+  color: #000000;
   text-transform: uppercase;
-
-
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   background-position: top center;
   background-repeat: repeat;
 }
@@ -44,7 +41,6 @@ a {
   font-size: 14px;
 }
 
-.menu-navigation,
 .navigation {
   font-weight: bold;
   list-style: none;
@@ -52,13 +48,12 @@ a {
   color: #ffffff;
 }
 
-.navigation {
-  background-color: #fff;
-}
-
+.navigation,
 .choose-variant-hotel,
-.main-footer {
-  background-color: #fff;
+.main-footer,
+.three-advantages,
+.interest {
+  background-color: #ffffff;
 }
 
 .real-city-list,
@@ -66,10 +61,6 @@ a {
   background-color: #81b3d2;
 }
 
-.three-advantages,
-.interest {
-  background-color: #fff;
-}
 
 .three-advantages-2 {
   background-color: #eeeeee;
@@ -79,11 +70,10 @@ a {
   background-color: rgba(249, 251, 246, 0.5)
 }
 
-.rubric-1 h1,
-.advantages-list h3 {
+.headline {
   font-size: 21px;
   line-height: 26px;
-  color: #171717;
+  color: #000000;
 }
 
 .sorting {
@@ -94,20 +84,18 @@ a {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  color: #171717;
+  color: #000000;
 }
 
-.interest h2 {
+.interested {
   font-size: 30px;
   line-height: 26px;
-  color: #171717;
+  color: #000000;
 }
 
-.rubric-1 p,
-.advantages-list p,
-.interest p {
+.main-style-list {
   font-size: 14px;
-  color: #0c0c0c;
+  color: #333333;
   line-height: 21px;
 }
 
@@ -115,12 +103,12 @@ a {
   list-style: none;
 }
 
-.real-city-list h3 {
+.h3-style {
   font-size: 21px;
-  color: #fafcfd;
+  color: #ffffff;
 }
 
-.real-city-list p {
+.style-list-one {
   font-size: 14px;
   color: #ffffff;
 }
@@ -129,7 +117,7 @@ a {
   background-color: #ffffff;
 }
 
-.social-cont ul {
+.social-buttons {
   list-style: none;
 }
 
@@ -139,19 +127,19 @@ a {
 }
 
 .row {
-  color: #fff;
+  color: #ffffff;
 }
 
 .col {
   font-size: 14px;
 }
 
-.col:nth-child(3) label {
+.costs-for-day {
   font-weight: bold;
   font-size: 16px;
 }
 
-.costs-variant th {
+.smaller-larger {
   font-weight: normal;
   font-size: 14px;
 }
@@ -165,7 +153,7 @@ a.button-blue {
   padding: 6px 17px;
   font-size: 14px;
   background-color: #82b3d3;
-  color: #fff;
+  color: #ffffff;
 }
 
 .social-buttons a {
@@ -183,11 +171,11 @@ a.button-grow {
   color: #fff;
 }
 
-.results-find li {
+.results-find {
   list-style: none;
 }
 
-.results-find a{
+.dashed {
   border-bottom: 1px dashed #81b3d2;
   font-size: 12px;
   color: #e8e8e8;
@@ -199,7 +187,7 @@ a.button-grow {
   color: #000;
 }
 
-.col button {
+.button-show {
   background-color: Transparent;
   color: #fff;
 }
@@ -222,7 +210,7 @@ a.button-grow {
   color: #fff;
 }
 
-.col button:hover {
+.button-show:hover {
   background-color: #fff;
   color: #000;
 }
@@ -236,7 +224,7 @@ a.button-grow {
   color: #81b3d2;
 }
 
-.results-find a:hover {
+.dashed:hover {
   border-bottom: 0px;
 }
 
@@ -270,7 +258,7 @@ a.button-grow:active,
 }
 
 .for-rank:active {
-  color: #000;
+  color: #000000;
 }
 
 .information-hover:visited {
@@ -293,36 +281,36 @@ a.button-grow:active,
   background-color: #ffffff;
 }
 
-a.social {
+.social {
   display: inline-block;
   background-color: #82b3d3;
   width: 46px;
   height: 48px;
 }
 
-a.social:hover {
+.social:hover {
   background-color: #669ebf;
 }
 
-a.social:active {
+.social:active {
   background-color: #5596be;
 }
 
-a.social:active img {
+.social:active img {
   opacity: .3;
 }
 
-svg {
+.logo-academy {
   width: 115px;
   height: 41px;
   fill: #231f20;
 }
 
-.button:hover svg {
-  fill: #81b3d2;
+.logo-academy:hover {
+  fill: #81b4d3;
 }
 
-.button:active svg {
+.logo-academy:active {
   fill: #bdbbbc;
 }
 

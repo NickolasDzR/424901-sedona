@@ -60,16 +60,16 @@
           </div>
           <div class="col">
             <h2 class="visually-hidden">Форма выбора стоимости отеля от меньшему к большему</h2>
-            <label for="costs-money">Стоимость в сутки (Р):</label>
+            <label class="costs-for-day" for="costs-money">Стоимость в сутки (Р):</label>
             <table class="costs-variant">
               <tr>
-                <th>От 0</th>
-                <th>До 3000</th>
+                <th class="smaller-larger">От 0</th>
+                <th class="smaller-larger">До 3000</th>
               </tr>
             </table>
             <input type="range" value="100" step="1" min="0" max="3000" id="costs-money">
             <br>
-            <button type="submit">Показать</button>
+            <button class="button-show" type="submit">Показать</button>
           </div>
         </div>
       </form>
@@ -80,13 +80,13 @@
       <p class="sorting">Сортировка:</p>
       <ul class="results-find">
         <li>
-          <a class="for-cost" href="#Cost">По цене</a>
+          <a class="for-cost dashed" href="#Cost">По цене</a>
         </li>
         <li>
-          <a href="#type">По типу</a>
+          <a class="dashed" href="#type">По типу</a>
         </li>
         <li>
-          <a class="for-rank" href="#rank">По рейтенгу</a>
+          <a class="for-rank dashed" href="#rank">По рейтенгу</a>
         </li>
         <li>
           <a href="#rank">
