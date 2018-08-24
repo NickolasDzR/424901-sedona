@@ -238,6 +238,9 @@ a {
 }
 
 .information-hover:hover,
+.photo-and-video:hover,
+.map-state:hover,
+.hotels:hover,
 .variant:hover {
   color: #81b3d2;
 }
@@ -265,18 +268,21 @@ a {
 .button-blue:active,
 .show-variant:active {
   background-color: #5596be;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-grow:active,
 .button-find:active {
   background-color: #503e32;
-  color:  rgba(0, 0, 0, 0.3);
+  color:  rgba(255, 255, 255, 0.3);
 }
 
 .information-hover:active,
+.photo-and-video:active,
+.map-state:active,
+.hotels:active,
 .variant:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .for-rank:active {
@@ -284,7 +290,7 @@ a {
 }
 
 .information-hover:visited {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .input-bg {
@@ -329,6 +335,6 @@ a {
 }
 
 .logo-academy:active {
-  fill:  rgba(0, 0, 0, 0.3);
+  fill:  rgba(255, 255, 255, 0.3);
 }
 
