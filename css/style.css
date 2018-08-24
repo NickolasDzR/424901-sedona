@@ -194,20 +194,18 @@ a.button-grow {
 }
 
 .button-find {
-  font-family: 'PT Sans', sans-serif;
   text-transform: uppercase;
-  font-weight: lighter;
-  font-size: 19px;
+  font-weight: bold;
+  font-size: 21px;
   padding: 26px 126px;
   background-color: #766257;
   color: #e9e7e5;
 }
 
 .show-variant {
-  font-family: 'PT Sans', sans-serif;
   text-transform: uppercase;
-  font-weight: lighter;
-  font-size: 19px;
+  font-weight: bold;
+  font-size: 21px;
   padding: 14px 176px;
   background-color: #81b3d2;
   color: #e9e7e5;
