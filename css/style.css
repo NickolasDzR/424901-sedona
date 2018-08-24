@@ -117,11 +117,11 @@ a {
   background-color: #ffffff;
 }
 
-.social-buttons {
+.social {
   list-style: none;
 }
 
-.variant a {
+.variant {
   font-size: 21px;
   font-weight: bold
 }
@@ -139,7 +139,7 @@ a {
   font-size: 16px;
 }
 
-.smaller-larger {
+.smaller-larger, {
   font-weight: normal;
   font-size: 14px;
 }
@@ -148,27 +148,17 @@ a {
   font-size: 16px;
 }
 
-a.button-blue {
-  display: inline-block;
-  padding: 6px 17px;
-  font-size: 14px;
-  background-color: #82b3d3;
-  color: #ffffff;
-}
-
-.social-buttons a {
+.social {
   display: inline-block;
   font-size: 14px;
   background-color: #82b3d3;
   color: #fff;
+  width: 46px;
+  height: 48px;
 }
 
-a.button-grow {
-  display: inline-block;
-  font-size: 14px;
-  padding: 6px 17px;
-  background-color: #766257;
-  color: #fff;
+.social-buttons {
+  list-style: none;
 }
 
 .results-find {
@@ -178,7 +168,7 @@ a.button-grow {
 .dashed {
   border-bottom: 1px dashed #81b3d2;
   font-size: 12px;
-  color: #e8e8e8;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .hash-tag {
@@ -189,7 +179,7 @@ a.button-grow {
 
 .button-show {
   background-color: Transparent;
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
 }
 
 .button-find {
@@ -201,6 +191,11 @@ a.button-grow {
   color: #ffffff;
 }
 
+.for-cost {
+  font-size: 12px;
+  color: #81b3d2;
+}
+
 .show-variant {
   text-transform: uppercase;
   font-weight: bold;
@@ -210,13 +205,40 @@ a.button-grow {
   color: #fff;
 }
 
+.label-style {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.curent {
+  color: #766357;
+}
+
+.button-blue {
+  display: inline-block;
+  font-weight: bold;
+  padding: 6px 17px;
+  font-size: 14px;
+  background-color: #82b3d3;
+  color: #ffffff;
+}
+
+.button-grow {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px 17px;
+  background-color: #766257;
+  color: #ffffff;
+}
+
 .button-show:hover {
   background-color: #fff;
   color: #000;
 }
 
 .information-hover:hover,
-.variant a:hover {
+.variant:hover {
   color: #81b3d2;
 }
 
@@ -228,33 +250,33 @@ a.button-grow {
   border-bottom: 0px;
 }
 
-a.button-blue:hover,
+.button-blue:hover,
 .show-variant:hover {
   background-color: #669ebf;
   color: #fff;
 }
 
-a.button-grow:hover,
+.button-grow:hover,
 .button-find:hover {
   background-color: #604e44;
   color: #fff;
 }
 
-a.button-blue:active,
+.button-blue:active,
 .show-variant:active {
   background-color: #5596be;
-  color: #80aecb;
+  color: rgba(0, 0, 0, 0.3);
 }
 
-a.button-grow:active,
+.button-grow:active,
 .button-find:active {
   background-color: #503e32;
-  color: #817670;
+  color:  rgba(0, 0, 0, 0.3);
 }
 
 .information-hover:active,
-.variant a:active {
-  color: #e1e1e1;
+.variant:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .for-rank:active {
@@ -262,22 +284,18 @@ a.button-grow:active,
 }
 
 .information-hover:visited {
-  color: #a69a93;
+  color: rgba(0, 0, 0, 0.3);
 }
 
-.for-cost:visited {
-  color: #a69a93;
-}
-
-.form-group input {
+.input-bg {
   background-color: #f2f2f2;
 }
 
-.form-group input:hover {
+.input-bg:hover {
   background-color: #ebebeb;
 }
 
-.form-group input:focus {
+.input-bg:focus {
   background-color: #ffffff;
 }
 
@@ -311,6 +329,6 @@ a.button-grow:active,
 }
 
 .logo-academy:active {
-  fill: #bdbbbc;
+  fill:  rgba(0, 0, 0, 0.3);
 }
 
