@@ -280,17 +280,13 @@ a {
 .information-hover:active,
 .photo-and-video:active,
 .map-state:active,
-.hotels:active,
+.hotels:hover,
 .variant:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .for-rank:active {
   color: #000000;
-}
-
-.information-hover:visited {
-  color: rgba(255, 255, 255, 0.3);
 }
 
 .input-bg {
@@ -335,6 +331,6 @@ a {
 }
 
 .logo-academy:active {
-  fill:  rgba(255, 255, 255, 0.3);
+  fill:  rgba(0, 0, 0, 0.3);
 }
 
