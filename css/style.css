@@ -216,12 +216,6 @@ a {
   font-size: 14px;
 }
 
-.curent,
-.curent:hover,
-.curent:active {
-  color: #766357;
-}
-
 .button-blue {
   display: inline-block;
   font-weight: bold;
@@ -285,6 +279,12 @@ a {
 .menu-link:active,
 .variant:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.curent,
+.curent:hover,
+.curent:active {
+  color: #766357;
 }
 
 .for-rank:active {
