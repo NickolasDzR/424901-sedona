@@ -104,7 +104,6 @@ a {
   color: #333333;
   line-height: 24px;
 }
-}
 
 .advantages-list {
   list-style: none;
@@ -182,6 +181,9 @@ a {
 }
 
 .button-show {
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 10px 33px 10px 35px;
   background-color: Transparent;
   color: rgba(255, 255, 255, 1);
 }
@@ -237,11 +239,12 @@ a {
 }
 
 .button-show:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: #ffffff;
+  color: #000000;
 }
 
-.menu-link:hover {
+.menu-link:hover,
+.variant:hover {
   color: #81b3d2;
 }
 
@@ -277,7 +280,8 @@ a {
   color:  rgba(255, 255, 255, 0.3);
 }
 
-.menu-link:active {
+.menu-link:active,
+.variant:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
