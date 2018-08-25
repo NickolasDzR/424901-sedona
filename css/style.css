@@ -216,7 +216,9 @@ a {
   font-size: 14px;
 }
 
-.curent {
+.curent,
+.curent:hover,
+.curent:active {
   color: #766357;
 }
 
