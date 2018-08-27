@@ -63,12 +63,14 @@ a {
   background-color: #81b3d2;
 }
 
-
 .three-advantages-2 {
+  display: flex;
+  flex-wrap: wrap;
   background-color: #eeeeee;
 }
 
 .main-footer {
+  display: flex;
   background-color: rgba(249, 251, 246, 0.5);
   padding: 40px 0;
 }
@@ -131,6 +133,12 @@ a {
   list-style: none;
 }
 
+.social-image {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+
 .variant {
   font-size: 21px;
   font-weight: bold
@@ -138,6 +146,7 @@ a {
 
 .row {
   color: #ffffff;
+  display: flex;
 }
 
 .col {
@@ -168,7 +177,7 @@ a {
 }
 
 .catalog-style {
-  list-style: none;
+  display: flex;
 }
 
 .dashed {
@@ -406,7 +415,6 @@ a {
 
 .list-advantage {
   flex: 0 0 33.3333%;
-  flex-direction: row;
   max-width: 33.3333%;
   padding: 0 10px;
   box-sizing: border-box;
@@ -427,13 +435,6 @@ a {
   background-color: white;
 }
 
-.col {
-  flex: 0 0 33.3333%;
-  max-width: 33.3333%;
-  padding: 0 10px;
-  box-sizing: border-box;
-}
-
 .rubric-1 {
   display: block;
   margin: 0 auto;
@@ -449,14 +450,14 @@ a {
 }
 
 .catalog-style {
+  list-style: none;
   margin: 0px;
   padding: 0px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .list-advantage {
-  width: 1200px;
   min-height: 240px;
   text-align: center;
 }
@@ -468,4 +469,30 @@ a {
 
 .interest {
   text-align: center;
+}
+
+.col {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.hash-tag {
+  padding: 0px;
+  margin: 0px;
+  width: 150px;
+  margin-left: 135px;
+  margin-right: 255px;
+}
+
+.catalog-style {
+  padding: 0px;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.footer-copyright {
+  margin-right: 100px;
+  margin-left: auto;
 }
