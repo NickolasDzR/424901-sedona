@@ -5,7 +5,7 @@ body {
   font-size: 14px;
   color: #000000;
   text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   background-position: top center;
   background-repeat: repeat;
 }
@@ -27,13 +27,15 @@ a {
 }
 
 .header-logo {
-  background-image: url(../img/background-photo.png);
+  background-image: url(../img/background-photo.jpg);
   background-repeat: no-repeat;
 }
 
 .filtering {
   background-image: url(../img/filter-background.jpg);
   background-repeat: no-repeat;
+  height: 715px;
+  width: 1200px;
 }
 
 .main-menu-navigation {
@@ -67,7 +69,8 @@ a {
 }
 
 .main-footer {
-  background-color: rgba(249, 251, 246, 0.5)
+  background-color: rgba(249, 251, 246, 0.5);
+  padding: 40px 0;
 }
 
 .headline {
@@ -120,7 +123,7 @@ a {
   color: #ffffff;
 }
 
-.forma {
+.form {
   background-color: #ffffff;
 }
 
@@ -209,6 +212,8 @@ a {
   padding: 15px 195px;
   background-color: #81b3d2;
   color: #fff;
+  margin-bottom: 55px;
+  margin-top: 55px;
 }
 
 .label-style {
@@ -294,12 +299,22 @@ a {
 .input-bg {
   background-color: #f2f2f2;
 }
+.input-date {
+  background-color: #f2f2f2;
+  width: 345px;
+}
 
 .input-bg:hover {
   background-color: #ebebeb;
 }
+.input-date:hover {
+  background-color: #ebebeb;
+}
 
 .input-bg:focus {
+  background-color: #ffffff;
+}
+.input-date:focus {
   background-color: #ffffff;
 }
 
@@ -336,3 +351,121 @@ a {
   fill:  rgba(0, 0, 0, 0.3);
 }
 
+.main-menu-navigation {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  flex: 0 0 20%;
+}
+
+.logo-sedona {
+  display: block;
+  width: 140px;
+  height: 70px;
+  margin: 0 auto;
+  margin-bottom: -80px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.real-city-list {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.bridge {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.city-png {
+  flex: 0 0 66.6666%;
+  max-width: 66.6666%;
+}
+
+.hotel-img {
+  display: block;
+}
+
+.list-advantage {
+  flex: 0 0 33.3333%;
+  flex-direction: row;
+  max-width: 33.3333%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.form {
+  width: 575px;
+  margin: 0 auto;
+  position: relative;
+  max-width: 575px;
+}
+
+.booking-form {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+}
+
+.col {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.rubric-1 {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 490px;
+  margin-top: 60px;
+  margin-bottom: 55px;
+}
+
+.welcome-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.catalog-style {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-advantage {
+  width: 1200px;
+  min-height: 240px;
+  text-align: center;
+}
+
+.list-item {
+  width: 1200px;
+  text-align: center;
+}
+
+.interest {
+  text-align: center;
+}
