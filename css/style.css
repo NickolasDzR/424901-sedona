@@ -461,7 +461,7 @@ a {
   margin: 0px;
   padding: 0px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .list-advantage {
