@@ -75,7 +75,6 @@ a {
 }
 
 .main-footer {
-  display: flex;
   background-color: rgba(249, 251, 246, 0.5);
   padding: 40px 0;
 }
@@ -151,7 +150,6 @@ a {
 
 .row {
   color: #ffffff;
-  display: flex;
 }
 
 .col {
@@ -384,11 +382,6 @@ a {
   background-color: white;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .real-city-list {
   flex: 0 0 33.3333%;
   max-width: 33.3333%;
@@ -423,7 +416,6 @@ a {
   max-width: 33.3333%;
   padding: 0 10px;
   box-sizing: border-box;
-  width: 320px;
   text-align: center;
 }
 
@@ -464,11 +456,6 @@ a {
   flex-wrap: wrap;
 }
 
-.list-advantage {
-  min-height: 240px;
-  text-align: center;
-}
-
 .list-item {
   min-height: 240px;
   text-align: center;
@@ -476,6 +463,11 @@ a {
 
 .interest {
   text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .col {
@@ -489,8 +481,6 @@ a {
   padding: 0px;
   margin: 0px;
   width: 150px;
-  margin-left: 135px;
-  margin-right: 255px;
 }
 
 .footer-copyright {
