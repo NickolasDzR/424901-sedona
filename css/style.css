@@ -15,6 +15,11 @@ a {
   color: #000000;
 }
 
+.header {
+  position: relative;
+  z-index: 2;
+}
+
 .visually-hidden  {
   position: absolute;
   width: 1px;
@@ -30,6 +35,21 @@ a {
 .header-logo {
   background-image: url(../img/background-photo.jpg);
   background-repeat: no-repeat;
+  padding: 74.7px 0;
+  position: relative;
+}
+
+.header-logo::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../img/polygon.svg);
+  background-size: cover;
 }
 
 .filtering {
@@ -38,12 +58,6 @@ a {
   height: 715px;
   width: 1200px;
 }
-
-.main-menu-navigation {
-  list-style: none;
-  font-size: 14px;
-}
-
 .navigation {
   font-weight: bold;
   list-style: none;
@@ -104,13 +118,13 @@ a {
 
 .main-style-list {
   font-size: 14px;
-  color: #333333;
+  color: #3333433;
   line-height: 21px;
 }
 
 .mainly {
   font-size: 14px;
-  color: #333333;
+  color: #3333433;
   line-height: 24px;
 }
 
@@ -360,10 +374,28 @@ a {
 .main-menu-navigation {
   display: flex;
   flex-wrap: wrap;
+  padding: 15px 71px 8px;
+  list-style: none;
+  font-size: 14px;
 }
 
 .menu-item {
-  flex: 0 0 20%;
+  flex: 0 0 15%;
+  max-width: 15%;
+}
+
+.menu-item:nth-child(1) {
+  margin-right: 83px;
+}
+
+.menu-item:nth-child(3n) {
+  margin-right: 86.9px;
+  text-align: right;
+  margin-left: auto;
+}
+
+.menu-item:nth-child(4) {
+  text-align: right;
 }
 
 .logo-sedona {
@@ -381,24 +413,24 @@ a {
 }
 
 .real-city-list {
-  flex: 0 0 33.3333%;
-  max-width: 33.3333%;
+  flex: 0 0 33.33334%;
+  max-width: 33.33334%;
   padding: 0 10px;
   box-sizing: border-box;
   text-align: center;
 }
 
 .bridge {
-  flex: 0 0 33.3333%;
-  max-width: 33.3333%;
+  flex: 0 0 33.33334%;
+  max-width: 33.33334%;
   padding: 0 10px;
   box-sizing: border-box;
   text-align: center;
 }
 
 .city-png {
-  flex: 0 0 66.6666%;
-  max-width: 66.6666%;
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
 }
 
 .stonebridge-image {
@@ -410,8 +442,8 @@ a {
 }
 
 .list-advantage {
-  flex: 0 0 33.3333%;
-  max-width: 33.3333%;
+  flex: 0 0 33.33334%;
+  max-width: 33.33334%;
   padding: 0 10px;
   box-sizing: border-box;
   text-align: center;
@@ -447,7 +479,7 @@ a {
 }
 
 .catalog-style {
-  display: flex;
+  text-align: center;
   flex-wrap: wrap;
   list-style: none;
   margin: 0px;
@@ -459,8 +491,8 @@ a {
 }
 
 .list-item {
-  flex: 0 0 33.3333%;
-  max-width: 33.3333%;
+  flex: 0 0 33.33334%;
+  max-width: 33.33334%;
   padding: 0 10px;
   box-sizing: border-box;
   text-align: center;
@@ -476,8 +508,8 @@ a {
 }
 
 .col {
-  flex: 0 0 33.3333%;
-  max-width: 33.3333%;
+  flex: 0 0 33.33334%;
+  max-width: 33.33334%;
   padding: 0 10px;
   box-sizing: border-box;
 }
@@ -498,4 +530,10 @@ a {
 .footer-copyright {
   margin-right: 100px;
   margin-left: auto;
+}
+
+.catalog-style li {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 5px;
 }
