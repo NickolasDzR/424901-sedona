@@ -458,7 +458,10 @@ a {
   list-style: none;
 }
 .list-item {
-  min-height: 240px;
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+  padding: 0 10px;
+  box-sizing: border-box;
   text-align: center;
 }
 
