@@ -20,6 +20,10 @@ a {
   z-index: 2;
 }
 
+.container {
+  box-shadow: 0 0 15px 5px rgba(129, 129, 129, 0.2);
+}
+
 .visually-hidden  {
   position: absolute;
   width: 1px;
@@ -256,20 +260,6 @@ a {
   margin-bottom: 2.6px;
 }
 
-.form {
-  background-color: #ffffff;
-}
-
-.social {
-  list-style: none;
-}
-
-.social-image {
-  display: flex;
-  justify-content: space-between;
-  vertical-align: middle;
-}
-
 .variant {
   font-size: 21px;
   font-weight: bold
@@ -291,36 +281,6 @@ a {
 
 .infrostructure {
   font-size: 16px;
-}
-
-.social-twitter {
-  display: inline-block;
-  font-size: 14px;
-  background-color: #82b3d3;
-  color: #fff;
-  width: 46px;
-  height: 48px;
-  margin-left: 75px;
-}
-
-.social-fb {
-  display: inline-block;
-  font-size: 14px;
-  background-color: #82b3d3;
-  color: #fff;
-  width: 46px;
-  height: 48px;
-  margin-left: 2px;
-}
-
-.social-youtube {
-  display: inline-block;
-  font-size: 14px;
-  background-color: #82b3d3;
-  color: #fff;
-  width: 46px;
-  height: 48px;
-  margin-left: 2px;
 }
 
 .dashed {
@@ -473,25 +433,6 @@ a {
   background-color: #ffffff;
 }
 
-.social {
-  display: inline-block;
-  background-color: #82b3d3;
-  width: 46px;
-  height: 48px;
-}
-
-.social:hover {
-  background-color: #669ebf;
-}
-
-.social:active {
-  background-color: #5596be;
-}
-
-.social:active img {
-  opacity: .3;
-}
-
 .logo-academy {
   width: 115px;
   height: 41px;
@@ -555,6 +496,7 @@ a {
   text-align: center;
 }
 
+
 .bridge {
   flex: 0 0 33.33334%;
   max-width: 33.33334%;
@@ -585,10 +527,9 @@ a {
 }
 
 .form {
-  width: 575px;
   margin: 0 auto;
   position: relative;
-  max-width: 575px;
+  max-width: 570px;
 }
 
 .booking-form {
@@ -684,9 +625,16 @@ a {
 }
 
 .footer-copyright {
+  display: inline-flex;
+  align-items: center;
   margin-right: 90px;
-  margin-left: 96px;
+  margin-left: 93px;
   margin-top: 17.8px;
+}
+
+.catalog-style {
+  width: 294px;
+  text-align: center;
 }
 
 .catalog-style li {
@@ -696,5 +644,37 @@ a {
 }
 
 .bysite {
- margin-top: ;
+  margin-bottom: 5px;
+  margin-right: 7px;
 }
+
+.social {
+  display: inline-flex;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 14px;
+  background-color: #82b3d3;
+  color: #fff;
+  width: 45px;
+  height: 48px;
+  margin-left: 3px;
+}
+
+.social-image {
+  display: inline-flex;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+
+.social:hover {
+  background-color: #669ebf;
+}
+
+.social:active {
+  background-color: #5596be;
+}
+
+.social:active img {
+  opacity: .3;
+}
+
