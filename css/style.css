@@ -59,7 +59,7 @@ a {
 .filtering {
   background-image: url(../img/filter-background.jpg);
   background-repeat: no-repeat;
-  height: 295.6px;
+  height: 215.5px;
   width: 1200px;
 }
 .navigation {
@@ -67,6 +67,12 @@ a {
   list-style: none;
   font-size: 14px;
   color: #ffffff;
+}
+
+.variant-sorts {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 9.8px 0 9px 61.1px;
 }
 
 .navigation,
@@ -98,6 +104,21 @@ a {
   background-color: rgba(249, 251, 246, 0.9)
 }
 
+.footer-hotel {
+  position: absolute;
+  width: 1200px;
+  height: 120px;
+  background-color: rgba(249, 251, 246, 0.9)
+}
+
+.variation {
+  height: 150px;
+  border-top: 1px solid #f2f2f2;
+}
+
+.variation:last-child {
+  border-bottom: 1px solid #f2f2f2;
+}
 
 .headline-first {
   width: 100%;
@@ -133,6 +154,8 @@ a {
 .sorting {
   font-size: 12px;
   color: initial;
+  padding-top: 17.2px;
+  margin-left: -120.3px;
 }
 
 .result-finds {
@@ -266,6 +289,13 @@ a {
 .variant {
   font-size: 21px;
   font-weight: bold
+}
+
+.cost-hotel {
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 16px;
 }
 
 .col {
@@ -581,6 +611,7 @@ a {
 }
 
 .controller-position {
+  display: inline-block;
   list-style: none;
 }
 
@@ -617,6 +648,60 @@ a {
   box-sizing: border-box;
 }
 
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  box-sizing: border-box;
+  padding: 27px 0 0 178.5px;
+}
+
+.col-hotel {
+  flex: 0 0 33.33334%;
+  max-width: 17.33334%;
+  padding: 28.2px 0 0 71.8px;
+  box-sizing: border-box;
+}
+
+.content-string {
+  flex: 0 0 33.33334%;
+  max-width: 33.33334%;
+  padding: 24px 30px;
+  box-sizing: border-box;
+  margin-right: 400px;
+}
+
+.raiting-hotel {
+  width: 150px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 28px;
+  margin-left: 24.5px;
+}
+
+.raiting {
+  margin-top: 48.5px;
+}
+
+.up-button {
+  fill: #cacaca;
+}
+
+.down-button {
+  fill: #cacaca;
+  margin-left: 8px;
+  transform: rotate(180deg);
+}
+
+.up-button:hover,
+.down-button:hover {
+  fill: #000000;
+}
+
+.up-button:active,
+.down-button:active {
+  fill: #81b3d2;
+}
+
 .hash-tag {
   padding: 0px;
   margin: 0px;
@@ -638,10 +723,28 @@ a {
   text-align: center;
 }
 
-.catalog-style li {
+.catalog-style-sorts {
+  width: 294px;
+  text-align: center;
+  padding-top: 12.5px;
+  margin-left: -373.3px;
+}
+
+.catalog-style li,
+.catalog-style-sorts li {
   display: inline-block;
   vertical-align: top;
   margin-bottom: 5px;
+}
+
+.list-for-cost {
+  margin-bottom: 5px;
+  margin-left: 29.3px;
+}
+
+.list-for-rank {
+  margin-bottom: 5px;
+  margin-left: 29.3px;
 }
 
 .bysite {

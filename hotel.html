@@ -80,7 +80,7 @@
         </form>
       </section>
       <section class="options">
-        <div class="row">
+        <div class="variant-sorts">
           <h2 class="visually-hidden">Результаты поиска отелей</h2>
           <div class="col-2">
             <p class="result-finds">Найдено: 3</p>
@@ -89,26 +89,30 @@
             <p class="sorting">Сортировка:</p>
           </div>
           <div class="col-2">
-            <ul class="catalog-style">
-              <li>
+            <ul class="catalog-style-sorts">
+              <li class="list-for-cost">
                 <a class="for-cost" href="#Cost">По цене</a>
               </li>
-              <li>
+              <li class="list-for-rank">
                 <a class="for-rank dashed" href="#type">По типу</a>
               </li>
-              <li>
+              <li class="list-for-rank">
                 <a class="for-rank dashed" href="#rank">По рейтенгу</a>
               </li>
           </div>
-          <div class="col-2">
+          <div class="col-3">
             <li class="controller-position">
               <a href="#rank">
                 <span class="visually-hidden">По возростанию</span>
+                <svg class="up-button" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path d="M5.5 0L0 10h11z" /></svg>
               </a>
             </li>
             <li class="controller-position">
               <a href="#rank">
                 <span class="visually-hidden">По убыванию</span>
+                <svg class="down-button" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path d="M5.5 0L0 10h11z" /></svg>
               </a>
             </li>
           </div>
@@ -117,54 +121,65 @@
         <div class="hotel-list">
           <div class="variation">
             <div class="row">
-              <div class="col">
+              <div class="col-hotel">
                 <img src="img/hotel-1.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
               </div>
-              <div class="col">
+              <div class="content-string">
                 <a class="variant" href="#link-varian1">AMARA RESORT & SPA</a>
-                <p>Гостиница от 4000р.</p>
+                <p class="cost-hotel">Гостиница от 4000р.</p>
                 <a class="button-blue" href="info">Подробнее</a>
                 <a class="button-grow" href="reservation">Забронировать</a>
               </div>
-              <div class="col">
-                <div class="rating">Рейтинг: 8.5</div>
+              <div class="raiting-hotel">
+                  <img class="star-image" src="img/star.png" alt="звезда">
+                  <img class="star-image" src="img/star.png" alt="звезда">
+                  <img class="star-image" src="img/star.png" alt="звезда">
+                  <img class="star-image" src="img/star.png" alt="звезда">
+                <div class="raiting">Рейтинг: 8.5</div>
               </div>
             </div>
           </div>
           <div class="variation">
             <div class="row">
-              <div class="col">
+              <div class="col-hotel">
                 <img src="img/hotel-2.jpg" width="135" height="90" alt="DESERT QUAIL INN">
               </div>
-              <div class="col">
+              <div class="content-string">
                 <a class="variant" href="#link-varian1">DESERT QUAIL INN</a>
-                <p>Мотель от 3000р.</p>
+                <p class="cost-hotel">Мотель от 3000р.</p>
                 <a class="button-blue" href="info">Подробнее</a>
                 <a class="button-grow" href="reservation">Забронировать</a>
               </div>
-              <div class="col">
-                <div class="rating">Рейтинг: 8.9</div>
+              <div class="raiting-hotel">
+                  <img class="star-image" src="img/star.png" alt="звезда">
+                  <img class="star-image" src="img/star.png" alt="звезда">
+                  <img class="star-image" src="img/star.png" alt="звезда">
+                <div class="raiting">Рейтинг: 8.9</div>
               </div>
             </div>
           </div>
           <div class="variation">
             <div class="row">
-              <div class="col">
+              <div class="col-hotel">
                 <img src="img/hotel-3.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO">
               </div>
-              <div class="col">
+              <div class="content-string">
                 <a class="variant" href="#link-varian1">VILLAS AT POCO DIABLO</a>
-                <p>Апартаменты от 2000р.</p>
+                <p class="cost-hotel">Апартаменты от 2000р.</p>
                 <a class="button-blue" href="info">Подробнее</a>
                 <a class="button-grow" href="reservation">Забронировать</a>
               </div>
-              <div class="col">
-                <div class="rating">Рейтинг: 9.2</div>
+              <div class="raiting-hotel">
+                  <img class="star-image" src="img/star.png" alt="звезда">
+                  <img class="star-image" src="img/star.png" alt="звезда">
+                <div class="raiting">Рейтинг: 9.2</div>
               </div>
             </div>
+          </div>
+        </div>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="footer-hotel">
       <div class="row">
         <div class="col">
           <p class="hash-tag">#visitSEDONA</p>
@@ -206,7 +221,7 @@
         </div>
       </div>
     </footer>
-    </div>
+  </div>
 </body>
 
 </html>
