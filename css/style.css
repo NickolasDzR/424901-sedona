@@ -59,6 +59,7 @@ a {
 .filtering {
   background-image: url(../img/filter-background.jpg);
   background-repeat: no-repeat;
+  color: #fff;
   height: 215.5px;
   width: 1200px;
 }
@@ -302,6 +303,8 @@ a {
   font-size: 14px;
 }
 
+
+
 .costs-for-day {
   font-weight: bold;
   font-size: 16px;
@@ -314,6 +317,32 @@ a {
 
 .infrostructure {
   font-size: 16px;
+}
+
+.pool {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.pool input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #fff;
+}
+
+.pool input[type="checkbox"]:checked + .checkbox-indicator::before,
+.pool input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 1px;
+  width: 15px;
+  height: 2px;
+  background-color: #fff;
 }
 
 .dashed {
@@ -329,11 +358,19 @@ a {
 }
 
 .button-show {
+  display: block;
+  margin: 0 auto;
   text-transform: uppercase;
   font-size: 14px;
-  padding: 10px 33px 10px 35px;
+  padding: 6px 35px;
   background-color: Transparent;
   color: rgba(255, 255, 255, 1);
+  line-height: 20px;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 136px;
+  margin-right: 159px;
 }
 
 .button-find {
@@ -662,12 +699,119 @@ a {
   box-sizing: border-box;
 }
 
+.filter-range {
+  flex: 0 0 33.33334%;
+  max-width: 33.33334%;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  width: 330px;
+}
+
+.filter-range-tittle {
+  margin-bottom: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.price-controls {
+  position: relative;
+  width: 314px;
+  height: 31px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #fff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #fff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.min-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.max-price {
+  width: 90px;
+  padding-left: 57px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background:none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+  width: 316px;
+}
+
+.scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.bar {
+  width: 80%;
+  height: 2px;
+  background: #fff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background-color: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0px;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
 .content-string {
   flex: 0 0 33.33334%;
   max-width: 33.33334%;
   padding: 24px 30px;
   box-sizing: border-box;
-  margin-right: 400px;
+}
+
+.star-image {
+  margin-right: 1.5px;
 }
 
 .raiting-hotel {
@@ -675,11 +819,18 @@ a {
   margin: 0 auto;
   display: block;
   margin-top: 28px;
-  margin-left: 24.5px;
+  margin-right: 72.5px;
+  text-align: right;
 }
 
 .raiting {
-  margin-top: 48.5px;
+  display: inline-block;
+  color: #666;
+  width: 110px;
+  background-color: #f2f2f2;
+  height: 27px;
+  margin-top: 49.5px;
+  margin-right: 13px;
 }
 
 .up-button {
