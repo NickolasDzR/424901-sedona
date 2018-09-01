@@ -46,26 +46,57 @@
         <h2 class="visually-hidden">Поиск отелей по типу</h2>
         <form action="https://echo.htmlacademy.ru" method="get">
           <div class="row">
-            <div class="col">
-              <h3 class="infrostructure">Инфраструктура:</h3>
-              <label class="pool" id="pool">
-                <input class="visually-hidden" type="checkbox" name="radio-infro" value="pool">
-                <span class="checkbox-indicator"></span>
-                Бассейн</label>
-              <label id="park-place">
-                <input type="checkbox" name="radio-infro" value="park-place">Парковка</label>
-              <label id="wi-fi">
-                <input type="checkbox" name="radio-infro" value="wi-fi">Wi-Fi</label>
+            <div class="variant-find">
+              <fieldset class="style-field">
+                <legend>
+                  <h3 class="infrostructure">Инфраструктура:</h3>
+                </legend>
+                <p class="login-help">
+                  <label class="login-checkbox" id="pool">
+                    <input class="visually-hidden" type="checkbox" name="pool" id="pool">
+                    <span class="checkbox-indicator"></span>
+                    Бассейн</label>
+                </p>
+                <p class="login-help">
+                  <label class="login-checkbox" id="park-place">
+                    <input class="visually-hidden" type="checkbox" name="park-place" id="pool">
+                    <span class="checkbox-indicator"></span>
+                    Парковка</label>
+                </p>
+                <p class="login-help">
+                  <label class="login-checkbox" id="wi-fi">
+                    <input class="visually-hidden" type="checkbox" name="wi-fi" id="pool">
+                    <span class="checkbox-indicator"></span>
+                    Wi-Fi
+                  </label>
+                </p>
             </div>
-            <div class="col">
-              <h3 class="infrostructure">Тип Жилья</h3>
-              <label id="hostel">
-                <input type="checkbox" name="radio-type" value="pool">Гостиница</label>
-              <label id="motel">
-                <input type="checkbox" name="radio-type" value="motel">Мотель</label>
-              <label id="apartment">
-                <input type="checkbox" name="radio-type" value="apartment">Апартаменты</label>
+            </fieldset>
+            <div class="variant-find">
+              <fieldset class="style-field">
+                <legend>
+                  <h3 class="infrostructure">Тип жилья</h3>
+                </legend>
+                <p class="login-help">
+                  <label class="login-checkbox" id="hostel">
+                    <input class="visually-hidden" type="checkbox" name="hostel" id="hostel">
+                    <span class="checkbox-indicator"></span>
+                    Гостиница</label>
+                </p>
+                <p class="login-help">
+                  <label class="login-checkbox" id="motel">
+                    <input class="visually-hidden" type="checkbox" name="motel" id="motel">
+                    <span class="checkbox-indicator"></span>
+                    Motel</label>
+                </p>
+                <p class="login-help">
+                  <label class="login-checkbox" id="apartment">
+                    <input class="visually-hidden" type="checkbox" name="apartment" id="apartment">
+                    <span class="checkbox-indicator"></span>
+                    Апартаменты</label>
+                </p>
             </div>
+            </fieldset>
             <div class="filter-range">
               <h2 class="visually-hidden">Форма выбора стоимости отеля от меньшему к большему</h2>
               <div class="filter-range-tittle">

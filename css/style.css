@@ -63,6 +63,52 @@ a {
   height: 215.5px;
   width: 1200px;
 }
+
+.style-field {
+  border: none;
+}
+
+.login-help {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.login-checkbox {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.login-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/checkbox-off.svg);
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/checkbox-on.svg);
+}
+
+.variant-find {
+  flex: 0 0 33.33334%;
+  max-width: 33.33334%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  padding-top: 21.8px;
+}
+
 .navigation {
   font-weight: bold;
   list-style: none;
@@ -317,32 +363,6 @@ a {
 
 .infrostructure {
   font-size: 16px;
-}
-
-.pool {
-  position: relative;
-  padding-left: 30px;
-  cursor: pointer;
-}
-
-.pool input[type="checkbox"] + .checkbox-indicator {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 17px;
-  height: 17px;
-  border: 2px solid #fff;
-}
-
-.pool input[type="checkbox"]:checked + .checkbox-indicator::before,
-.pool input[type="checkbox"]:checked + .checkbox-indicator::after {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 1px;
-  width: 15px;
-  height: 2px;
-  background-color: #fff;
 }
 
 .dashed {
