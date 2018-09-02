@@ -64,24 +64,20 @@ a {
   width: 1200px;
 }
 
-.style-field {
-  border: none;
-}
 
-.login-help {
+.filter-conteiner {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 15px 0;
+  margin: 29px 0;
 }
 
-.login-checkbox {
+.filter-checkbox {
   position: relative;
-  padding-left: 30px;
+  padding-left: 39px;
   cursor: pointer;
 }
 
-.login-checkbox input[type="checkbox"] + .checkbox-indicator {
+input + .checkbox-indicator {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -90,23 +86,53 @@ a {
   background-image: url(../img/checkbox-off.svg);
 }
 
-.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
-.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
-  content: "";
+input:checked + .checkbox-indicator {
   position: absolute;
   top: 0px;
   left: 0px;
   width: 27px;
   height: 23px;
-  background-image: url(../img/checkbox-on.svg);
+  background-image: none;
 }
 
-.variant-find {
-  flex: 0 0 33.33334%;
-  max-width: 33.33334%;
-  padding: 0 10px;
+input:checked + .checkbox-indicator::before,
+input:checked + .checkbox-indicator::after {
+  content: url(../img/checkbox-on.svg);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 27px;
+  height: 23px;
+  background: none;
+}
+
+
+.filter-find-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.variant-find-one {
+  flex: 0 0 20%;
+  max-width: 20%;
   box-sizing: border-box;
-  padding-top: 21.8px;
+  padding: 11px 72px;
+}
+
+.variant-find-two {
+  flex: 0 0 20%;
+  max-width: 20%;
+  box-sizing: border-box;
+  padding: 9px;
+  margin-left: 78px;
+}
+
+.filter-range {
+  flex: 0 0 33%;
+  max-width: 33%;
+  margin-left: auto;
+  padding: 20px 10px;
+  box-sizing: border-box;
 }
 
 .navigation {
@@ -152,14 +178,12 @@ a {
 }
 
 .footer-hotel {
-  position: absolute;
   width: 1200px;
   height: 120px;
   background-color: rgba(249, 251, 246, 0.9)
 }
 
 .variation {
-  height: 150px;
   border-top: 1px solid #f2f2f2;
 }
 
@@ -713,18 +737,10 @@ a {
 }
 
 .col-hotel {
-  flex: 0 0 33.33334%;
-  max-width: 17.33334%;
-  padding: 28.2px 0 0 71.8px;
+  flex: 0 0 17%;
+  max-width: 17%;
+  padding: 31.2px 0 0 71.8px;
   box-sizing: border-box;
-}
-
-.filter-range {
-  flex: 0 0 33.33334%;
-  max-width: 33.33334%;
-  padding: 20px 10px;
-  box-sizing: border-box;
-  width: 330px;
 }
 
 .filter-range-tittle {
@@ -824,33 +840,35 @@ a {
 }
 
 .content-string {
-  flex: 0 0 33.33334%;
-  max-width: 33.33334%;
-  padding: 24px 30px;
+  flex: 0 0 67.8%;
+  max-width: 67.8%;
+  padding: 27.4px 34.3px;
   box-sizing: border-box;
 }
 
 .star-image {
-  margin-right: 1.5px;
+  margin: 2px 1.3px 0 0;
 }
 
 .raiting-hotel {
-  width: 150px;
-  margin: 0 auto;
+  max-width: 110px;
   display: block;
   margin-top: 28px;
-  margin-right: 72.5px;
   text-align: right;
 }
 
 .raiting {
   display: inline-block;
   color: #666;
-  width: 110px;
+  width: 98px;
   background-color: #f2f2f2;
-  height: 27px;
-  margin-top: 49.5px;
-  margin-right: 13px;
+  margin-top: 43.1px;
+  padding: 6px;
+  text-align: center;
+}
+
+.inner {
+  min-width: 96px;
 }
 
 .up-button {
@@ -898,7 +916,7 @@ a {
   width: 294px;
   text-align: center;
   padding-top: 12.5px;
-  margin-left: -373.3px;
+  margin-left: -372.3px;
 }
 
 .catalog-style li,

@@ -45,26 +45,23 @@
       <section class="filtering">
         <h2 class="visually-hidden">Поиск отелей по типу</h2>
         <form action="https://echo.htmlacademy.ru" method="get">
-          <div class="row">
-            <div class="variant-find">
-              <fieldset class="style-field">
-                <legend>
+          <div class="filter-find-row">
+            <div class="variant-find-one">
                   <h3 class="infrostructure">Инфраструктура:</h3>
-                </legend>
-                <p class="login-help">
-                  <label class="login-checkbox" id="pool">
+                <p class="filter-conteiner">
+                  <label class="filter-checkbox" id="pool">
                     <input class="visually-hidden" type="checkbox" name="pool" id="pool">
                     <span class="checkbox-indicator"></span>
                     Бассейн</label>
                 </p>
-                <p class="login-help">
-                  <label class="login-checkbox" id="park-place">
+                <p class="filter-conteiner">
+                  <label class="filter-checkbox" id="park-place">
                     <input class="visually-hidden" type="checkbox" name="park-place" id="pool">
                     <span class="checkbox-indicator"></span>
                     Парковка</label>
                 </p>
-                <p class="login-help">
-                  <label class="login-checkbox" id="wi-fi">
+                <p class="filter-conteiner">
+                  <label class="filter-checkbox" id="wi-fi">
                     <input class="visually-hidden" type="checkbox" name="wi-fi" id="pool">
                     <span class="checkbox-indicator"></span>
                     Wi-Fi
@@ -72,31 +69,27 @@
                 </p>
             </div>
             </fieldset>
-            <div class="variant-find">
-              <fieldset class="style-field">
-                <legend>
+            <div class="variant-find-two">
                   <h3 class="infrostructure">Тип жилья</h3>
-                </legend>
-                <p class="login-help">
-                  <label class="login-checkbox" id="hostel">
+                <p class="filter-conteiner">
+                  <label class="filter-checkbox" id="hostel">
                     <input class="visually-hidden" type="checkbox" name="hostel" id="hostel">
                     <span class="checkbox-indicator"></span>
                     Гостиница</label>
                 </p>
-                <p class="login-help">
-                  <label class="login-checkbox" id="motel">
+                <p class="filter-conteiner">
+                  <label class="filter-checkbox" id="motel">
                     <input class="visually-hidden" type="checkbox" name="motel" id="motel">
                     <span class="checkbox-indicator"></span>
                     Motel</label>
                 </p>
-                <p class="login-help">
-                  <label class="login-checkbox" id="apartment">
+                <p class="filter-conteiner">
+                  <label class="filter-checkbox" id="apartment">
                     <input class="visually-hidden" type="checkbox" name="apartment" id="apartment">
                     <span class="checkbox-indicator"></span>
                     Апартаменты</label>
                 </p>
             </div>
-            </fieldset>
             <div class="filter-range">
               <h2 class="visually-hidden">Форма выбора стоимости отеля от меньшему к большему</h2>
               <div class="filter-range-tittle">
@@ -140,7 +133,7 @@
                 <a class="for-rank dashed " href="#type ">По типу</a>
               </li>
               <li class="list-for-rank ">
-                <a class="for-rank dashed " href="#rank ">По рейтенгу</a>
+                <a class="for-rank dashed " href="#rank ">По рейтингу</a>
               </li>
           </div>
           <div class="col-3 ">
@@ -170,7 +163,7 @@
               </div>
               <div class="content-string ">
                 <a class="variant " href="#link-varian1 ">AMARA RESORT & SPA</a>
-                <p class="cost-hotel ">Гостиница от 4000р.</p>
+                <p class="cost-hotel "><span class="inner">Гостиница</span> от 4000р.</p>
                 <a class="button-blue " href="info ">Подробнее</a>
                 <a class="button-grow " href="reservation ">Забронировать</a>
               </div>
@@ -179,7 +172,7 @@
                 <img class="star-image " src="img/star.png " alt="звезда ">
                 <img class="star-image " src="img/star.png " alt="звезда ">
                 <img class="star-image " src="img/star.png " alt="звезда ">
-                <div class="raiting ">Рейтинг: 8.5</div>
+                <div class="raiting">Рейтинг: 8.5</div>
               </div>
             </div>
           </div>
@@ -190,7 +183,7 @@
               </div>
               <div class="content-string ">
                 <a class="variant " href="#link-varian1 ">DESERT QUAIL INN</a>
-                <p class="cost-hotel ">Мотель от 3000р.</p>
+                <p class="cost-hotel "><span class="inner">Мотель</span> от 3000р.</p>
                 <a class="button-blue " href="info ">Подробнее</a>
                 <a class="button-grow " href="reservation ">Забронировать</a>
               </div>
@@ -198,7 +191,7 @@
                 <img class="star-image " src="img/star.png " alt="звезда ">
                 <img class="star-image " src="img/star.png " alt="звезда ">
                 <img class="star-image " src="img/star.png " alt="звезда ">
-                <div class="raiting ">Рейтинг: 8.9</div>
+                <div class="raiting">Рейтинг: 8.9</div>
               </div>
             </div>
           </div>
@@ -209,16 +202,14 @@
               </div>
               <div class="content-string ">
                 <a class="variant " href="#link-varian1 ">VILLAS AT POCO DIABLO</a>
-                <p class="cost-hotel ">Апартаменты от 2000р.</p>
+                <p class="cost-hotel "><span class="inner">Апартаменты</span> от 2000р.</p>
                 <a class="button-blue " href="info ">Подробнее</a>
                 <a class="button-grow " href="reservation ">Забронировать</a>
               </div>
               <div class="raiting-hotel ">
                 <img class="star-image " src="img/star.png " alt="звезда ">
                 <img class="star-image " src="img/star.png " alt="звезда ">
-                <div class="raiting ">
-                  <p class="inner">Рейтинг: 9.2</p>
-                </div>
+                <div class="raiting ">Рейтинг: 9.2</div>
               </div>
             </div>
           </div>
