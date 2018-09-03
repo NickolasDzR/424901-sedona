@@ -149,12 +149,14 @@ input:checked + .checkbox-indicator::after {
 }
 
 .navigation,
-.choose-variant-hotel,
-.hotel-footer,
 .index-footer,
 .three-advantages,
 .interest {
   background-color: #ffffff;
+}
+
+.choose-variant-hotel {
+  background-color: #fefefe;
 }
 
 .three-advantages {
@@ -181,7 +183,7 @@ input:checked + .checkbox-indicator::after {
 .hotel-footer {
   width: 1200px;
   height: 120px;
-  background-color: rgba(249, 251, 246, 0.9)
+  background-color: #fefefe;
 }
 
 .footer-hotel {
@@ -364,6 +366,7 @@ input:checked + .checkbox-indicator::after {
 .cost-hotel {
   padding: 0;
   margin: 0;
+  color: #333333;
   margin-top: 10px;
   margin-bottom: 16px;
 }
@@ -721,7 +724,7 @@ input:checked + .checkbox-indicator::after {
 .row-hotel {
   display: flex;
   flex-wrap: wrap;
-  border-top: 1px solid #f2f2f2;
+  border-top: 1px solid #f6f6f6;
 }
 
 .variant-hotel-two {
@@ -910,7 +913,7 @@ input:checked + .checkbox-indicator::after {
 }
 
 .up-button {
-  fill: #cacaca;
+  fill: #81b3d2;
 }
 
 .down-button {
@@ -919,12 +922,10 @@ input:checked + .checkbox-indicator::after {
   transform: rotate(180deg);
 }
 
-.up-button:hover,
 .down-button:hover {
   fill: #000000;
 }
 
-.up-button:active,
 .down-button:active {
   fill: #81b3d2;
 }
@@ -979,20 +980,14 @@ input:checked + .checkbox-indicator::after {
 
 .social {
   display: inline-flex;
-  justify-content: space-around;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   font-size: 14px;
   background-color: #82b3d3;
   color: #fff;
   width: 45px;
   height: 48px;
   margin-left: 3px;
-}
-
-.social-image {
-  display: inline-flex;
-  justify-content: space-between;
-  vertical-align: middle;
 }
 
 .social:hover {
