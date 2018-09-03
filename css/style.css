@@ -432,6 +432,7 @@ input:checked + .checkbox-indicator::after {
   background-color: #766257;
   color: #ffffff;
   margin-top: 31.7px;
+  border: none;
 }
 
 .for-cost {
@@ -451,8 +452,21 @@ input:checked + .checkbox-indicator::after {
 }
 
 .label-style {
+  display: inline-block;
   font-weight: bold;
   font-size: 14px;
+  min-width: 100px;
+}
+
+.strange-name {
+  display: inline-block;
+  min-width: 110px;
+}
+.super-button {
+  width: 30px;
+  height: 38px;
+  border: none;
+  background-color: #f2f2f2;
 }
 
 .button-blue {
@@ -531,16 +545,60 @@ input:checked + .checkbox-indicator::after {
   color: #000000;
 }
 
+.first-form {
+  display: flex;
+}
+
+.second-form {
+  display: flex;
+}
+
+.form-choose-number {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50px;
+}
+
+.modal-login {
+  margin: 0 auto;
+  position: relative;
+  max-width: 570px;
+  border: none;
+}
+
+.booking-form {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  height: 394.3px;
+}
+
+.booking-form input[type="text"],
+.booking-form input[type="number"] {
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+  outline: none;
+  padding: 10px;
+}
+
 .input-bg {
   background-color: #f2f2f2;
+  width: 30px;
+  height: 18px;
+  border: none;
+  text-align: center
 }
 .input-date {
   background-color: #f2f2f2;
-  width: 345px;
+  width: 326px;
+  border: none;
 }
 
 .input-bg:hover {
-  background-color: #ebebeb;
+  background-color: #f2f2f2;
 }
 
 .input-date:hover {
@@ -548,11 +606,12 @@ input:checked + .checkbox-indicator::after {
 }
 
 .input-bg:focus {
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 .input-date:focus {
-  background-color: #ffffff;
+  background-color: #fff;
+  border: 2px solid #e5e5e5;
 }
 
 .logo-academy {
@@ -646,21 +705,6 @@ input:checked + .checkbox-indicator::after {
   padding: 0 10px;
   box-sizing: border-box;
   text-align: center;
-}
-
-.form {
-  margin: 0 auto;
-  position: relative;
-  max-width: 570px;
-}
-
-.booking-form {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background-color: white;
-  height: 394.3px;
 }
 
 .rubric-1 {

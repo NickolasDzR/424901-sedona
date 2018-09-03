@@ -70,7 +70,7 @@
           <li class="list-advantage">
             <img class="home-image" src="img/home.svg" width="74" height="80" alt="домик">
             <h3 class="headline-first">Жильё</h3>
-            <p class="first-paragraph-list">Рекомендуем пожить в настоящем мотеле, всё как в   кино!</p>
+            <p class="first-paragraph-list">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="list-advantage">
             <img class="burger-image" src="img/burger.svg" width="72" height="76" alt="бургер">
@@ -124,8 +124,8 @@
           <h2 class="interested">Заинтересовались?</h2>
           <p class="mainly">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне
           </p>
-          <div class="form">
-            <button type="button" class="button-find">Поиск гостиницы в Седоне</button>
+          <div class="modal modal-login">
+            <button class="button-find" type="button">Поиск гостиницы в Седоне</button>
             <form class="booking-form" action="https://htmlacademy.ru/Feedback" method="get">
               <p class="form-group">
                 <label class="label-style" for="arrival-date">Дата заезда:
@@ -137,17 +137,39 @@
                   <input class="input-date" type="text" name="date-turnout" id="turnout-date">
                 </label>
               </p>
-              <p class="form-group">
-                <label class="label-style" for="old-people">Взрослые:
-                  <input class="input-bg" type="number" size="1" name="number" id="old-people" min="1" max="665" step="1" value="2">
-                </label>
-              </p>
-              <p class="form-group">
-                <label class="label-style" for="kids">Дети:
-                  <input class="input-bg" type="number" size="1" name="number" id="kids" min="0" max="665" step="1" value="2">
-                </label>
-              </p>
-              <br>
+              <div class="form-choose-number">
+                <div class="first-form">
+                  <!--
+                  <label class="label-style" for="old-people">
+                    Взрослые:</label>-->
+                    <span class="strange-name">Врослые:</span>
+                    <div class="input-button">
+                      <button class="super-button">+</button>
+                    </div>
+                    <div class="col-input">
+                      <input class="input-bg" type="number" size="1" name="number" id="old-people" min="1" max="665" step="1" value="2">
+                    </div>
+                    <div class="col-button">
+                      <button class="super-button">-</button>
+                    </div>
+                </div>
+                <div class="form-choose-number">
+                    <div class="first-form">
+                      <!--
+                      <label class="label-style" for="old-people">Взрослые:</label>
+                      -->
+                      <span class="strange-name">Дети</span>
+                        <div class="input-button">
+                          <button class="super-button">+</button>
+                        </div>
+                        <div class="col-input">
+                          <input class="input-bg" type="number" size="1" name="number" id="old-people" min="1" max="665" step="1" value="2">
+                        </div>
+                        <div class="col-button">
+                          <button class="super-button">-</button>
+                        </div>
+                    </div>
+              </div>
               <button class="show-variant" type="submit">Найти</button>
             </form>
           </div>
