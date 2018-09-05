@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -126,54 +127,48 @@
           </p>
           <div class="modal modal-login">
             <button class="button-find" type="button">Поиск гостиницы в Седоне</button>
-            <form class="booking-form" action="https://htmlacademy.ru/Feedback" method="get">
-              <p class="form-group">
-                <label class="label-style" for="arrival-date">Дата заезда:
-                  <input class="input-date" type="text" name="date-arrival" id="arrival-date">
-                </label>
-              </p>
-              <p class="form-group">
-                <label class="label-style" for="turnout-date" size="2300">Дата выезда:
-                  <input class="input-date" type="text" name="date-turnout" id="turnout-date">
-                </label>
-              </p>
+            <form class="booking-form form-show" action="https://htmlacademy.ru/Feedback" method="get">
+              <div class="form-arrival">
+                <label class="label-style-date" for="arrival-date">Дата заезда:</label>
+                  <input class="input-date icon-date" type="text" name="date-arrival" id="arrival-date">
+                  <img class="calendar-image-arrival" src="img/calendar.svg" alt="календарь" width="21" height="22">
+              </div>
+              <div class="form-turnout">
+                <label class="label-style-date" for="turnout-date" size="2300">Дата выезда:</label>
+                  <input class="input-date icon-date" type="text" name="date-turnout" id="turnout-date">
+                  <img class="calendar-image-turnout" src="img/calendar.svg" alt="календарь" width="21" height="22">
+              </div>
               <div class="form-choose-number">
                 <div class="first-form">
-                  <!--
-                  <label class="label-style" for="old-people">
-                    Взрослые:</label>-->
-                    <span class="strange-name">Врослые:</span>
+                  <label class="label-style-old" for="old-people">Взрослые:</label>
+                  <div class="input-button">
+                    <button class="minus">-</button>
+                  </div>
+                  <div class="col-input">
+                    <input class="input-bg" type="number" size="1" name="number" id="old-people" min="1" max="665" step="1" value="2">
+                  </div>
+                  <div class="col-button">
+                    <button class="plus">+</button>
+                  </div>
+                </div>
+                <div class="form-choose-number">
+                  <div class="second-form">
+                    <label class="label-style-kid" for="kidpeople">Дети</label>
                     <div class="input-button">
-                      <button class="super-button">+</button>
+                      <button class="minus">-</button>
                     </div>
                     <div class="col-input">
                       <input class="input-bg" type="number" size="1" name="number" id="old-people" min="1" max="665" step="1" value="2">
                     </div>
                     <div class="col-button">
-                      <button class="super-button">-</button>
+                      <button class="plus">+</button>
                     </div>
+                  </div>
                 </div>
-                <div class="form-choose-number">
-                    <div class="first-form">
-                      <!--
-                      <label class="label-style" for="old-people">Взрослые:</label>
-                      -->
-                      <span class="strange-name">Дети</span>
-                        <div class="input-button">
-                          <button class="super-button">+</button>
-                        </div>
-                        <div class="col-input">
-                          <input class="input-bg" type="number" size="1" name="number" id="old-people" min="1" max="665" step="1" value="2">
-                        </div>
-                        <div class="col-button">
-                          <button class="super-button">-</button>
-                        </div>
-                    </div>
-              </div>
-              <button class="show-variant" type="submit">Найти</button>
+                <button class="show-variant" type="submit">Найти</button>
             </form>
+            </div>
           </div>
-        </div>
       </section>
       <section class="map-city">
         <h2 class="visually-hidden">Форма выбора даты заезда и выезда, а так же количество людей</h2>
@@ -224,7 +219,6 @@
         </div>
       </div>
     </footer>
-  </div>
+    </div>
 </body>
-
 </html>

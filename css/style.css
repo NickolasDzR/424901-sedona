@@ -413,7 +413,7 @@ input:checked + .checkbox-indicator::after {
   margin: 0 auto;
   text-transform: uppercase;
   font-size: 14px;
-  padding: 6px 35px;
+  padding: 2 35px;
   background-color: Transparent;
   color: rgba(255, 255, 255, 1);
   line-height: 20px;
@@ -431,7 +431,7 @@ input:checked + .checkbox-indicator::after {
   padding: 30px 138px;
   background-color: #766257;
   color: #ffffff;
-  margin-top: 31.7px;
+  margin-top: 34.7px;
   border: none;
 }
 
@@ -444,35 +444,33 @@ input:checked + .checkbox-indicator::after {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 21px;
-  padding: 15px 195px;
+  padding: 17px 196px;
   background-color: #81b3d2;
   color: #fff;
-  margin-bottom: 55px;
-  margin-top: 106px;
-}
-
-.label-style {
-  display: inline-block;
-  font-weight: bold;
-  font-size: 14px;
-  min-width: 100px;
+  margin-top: 54px;
+  border: none;
 }
 
 .strange-name {
   display: inline-block;
   min-width: 110px;
 }
-.super-button {
-  width: 30px;
-  height: 38px;
+
+.plus,
+.minus {
+  font-weight: bold;
+  color: #a9a9a9;
   border: none;
   background-color: #f2f2f2;
+  font-size: 25px;
+  width: 30px;
+  height: 38px;
 }
 
 .button-blue {
   display: inline-block;
   font-weight: bold;
-  padding: 6px 16px;
+  padding: 2 16px;
   margin-right: 3px;
   font-size: 14px;
   background-color: #82b3d3;
@@ -546,17 +544,36 @@ input:checked + .checkbox-indicator::after {
 }
 
 .first-form {
+  align-items: center;
   display: flex;
+  margin-right: 60px;
 }
 
 .second-form {
+  align-items: center;
   display: flex;
+}
+
+.label-style-date,
+.label-style-old,
+.label-style-kid {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  min-width: 100px;
+  margin-right: 2;
+}
+.label-style-old {
+  margin-right: 10px;
+}
+
+.label-style-kid {
+  margin-right: -34px;
 }
 
 .form-choose-number {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 50px;
 }
 
 .modal-login {
@@ -566,14 +583,18 @@ input:checked + .checkbox-indicator::after {
   border: none;
 }
 
-.booking-form {
+.form-show {
+  display: block;
   position: absolute;
   top: 100%;
   left: 0;
   right: 0;
   background-color: white;
-  height: 394.3px;
+  height: 339.3px;
+  padding: 57px 0 0 57px;
+  text-align: left;
 }
+
 
 .booking-form input[type="text"],
 .booking-form input[type="number"] {
@@ -582,6 +603,14 @@ input:checked + .checkbox-indicator::after {
   text-transform: uppercase;
   outline: none;
   padding: 10px;
+}
+
+.form-arrival {
+  margin-bottom: 31px;
+}
+
+.form-turnout {
+  margin-bottom: 31px;
 }
 
 .input-bg {
@@ -612,6 +641,19 @@ input:checked + .checkbox-indicator::after {
 .input-date:focus {
   background-color: #fff;
   border: 2px solid #e5e5e5;
+  width: 322px;
+}
+
+.calendar-image-arrival {
+  position: absolute;
+  right: 70px;
+  top: 64px;
+}
+
+.calendar-image-turnout {
+  position: absolute;
+  right: 70px;
+  top: 130px;
 }
 
 .logo-academy {
