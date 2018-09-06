@@ -463,8 +463,19 @@ input:checked + .checkbox-indicator::after {
   border: none;
   background-color: #f2f2f2;
   font-size: 25px;
-  width: 30px;
+  width: 31.2px;
   height: 38px;
+  outline: none;
+}
+
+.plus:hover,
+.minus:hover {
+  color: #000000;
+}
+
+.plus:active,
+.minus:active {
+  color: #81b3d2;
 }
 
 .button-blue {
@@ -546,7 +557,7 @@ input:checked + .checkbox-indicator::after {
 .first-form {
   align-items: center;
   display: flex;
-  margin-right: 60px;
+  margin-right: 53px;
 }
 
 .second-form {
@@ -561,14 +572,18 @@ input:checked + .checkbox-indicator::after {
   font-weight: bold;
   font-size: 14px;
   min-width: 100px;
-  margin-right: 2;
 }
+
 .label-style-old {
   margin-right: 10px;
 }
 
 .label-style-kid {
-  margin-right: -34px;
+  margin-right: -35px;
+}
+
+.label-style-date {
+  margin-right: 6px;
 }
 
 .form-choose-number {
@@ -605,6 +620,10 @@ input:checked + .checkbox-indicator::after {
   padding: 10px;
 }
 
+..booking-form input[type="number"] {
+  width: 33px;
+}
+
 .form-arrival {
   margin-bottom: 31px;
 }
@@ -615,7 +634,7 @@ input:checked + .checkbox-indicator::after {
 
 .input-bg {
   background-color: #f2f2f2;
-  width: 30px;
+  width: 36px;
   height: 18px;
   border: none;
   text-align: center
@@ -646,14 +665,32 @@ input:checked + .checkbox-indicator::after {
 
 .calendar-image-arrival {
   position: absolute;
-  right: 70px;
-  top: 64px;
+  right: 59px;
+  top: 63px;
+  border: none;
+  background: rgba(242, 242, 242, 0);
+  outline: none;
 }
 
 .calendar-image-turnout {
   position: absolute;
-  right: 70px;
+  right: 60px;
   top: 130px;
+  border: none;
+  background: rgba(242, 242, 242, 0);
+  outline: none;
+}
+
+.calendar-image {
+  fill: #a9a9a9;
+}
+
+.calendar-image:hover {
+  fill: #000000;
+}
+
+.calendar-image:active {
+  fill: #81b3d2;
 }
 
 .logo-academy {
@@ -839,6 +876,10 @@ input:checked + .checkbox-indicator::after {
 
 .raiting:nth-child(3) {
   margin-left: 4px;
+}
+
+.col-input {
+  width: 52.4px;
 }
 
 .col {
@@ -1090,3 +1131,13 @@ input:checked + .checkbox-indicator::after {
   opacity: .3;
 }
 
+.input-bg::-webkit-outer-spin-button,
+.input-bg::-webkit-inner-spin-button {
+-webkit-appearance: none;
+appearance: none;
+}
+
+.input-bg[type='number'] {
+-moz-appearance: textfield;
+appearance: textfield;
+}
