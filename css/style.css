@@ -53,7 +53,7 @@ a {
   left: 0;
   right: 0;
   background-image: url(../img/polygon.svg);
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .filtering {
@@ -446,10 +446,10 @@ input:checked + .checkbox-indicator::after {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 21px;
-  padding: 17px 196px;
+  padding: 16px 195px;
   background-color: #81b3d2;
   color: #fff;
-  margin-top: 54px;
+  margin-top: 55px;
   border: none;
 }
 
@@ -484,7 +484,7 @@ input:checked + .checkbox-indicator::after {
   display: inline-block;
   font-weight: bold;
   font-size: 27px;
-  margin-left: -7px;
+  margin-left: -8px;
 }
 
 .minus-style {
@@ -574,7 +574,8 @@ input:checked + .checkbox-indicator::after {
 .first-form {
   align-items: center;
   display: flex;
-  margin-right: 53px;
+  margin-right: 54px;
+
 }
 
 .second-form {
@@ -600,7 +601,7 @@ input:checked + .checkbox-indicator::after {
 }
 
 .label-style-date {
-  margin-right: 6px;
+  margin-right: 7px;
 }
 
 .form-choose-number {
@@ -622,8 +623,8 @@ input:checked + .checkbox-indicator::after {
   left: 0;
   right: 0;
   background-color: white;
-  height: 339.3px;
-  padding: 57px 0 0 57px;
+  height: 281.5px;
+  padding: 56.5px 17px 57.2px 57px;
   text-align: left;
 }
 
@@ -643,7 +644,7 @@ input:checked + .checkbox-indicator::after {
 }
 
 .booking-form input[type="text"] {
-  padding: 10px 10px 10px 13px;
+  padding: 8px 6px 8px 11px;
 }
 
 .form-arrival {
@@ -661,10 +662,11 @@ input:checked + .checkbox-indicator::after {
   border: none;
   text-align: center
 }
+
 .input-date {
   background-color: #f2f2f2;
   width: 326px;
-  border: none;
+  border: 2px solid #f2f2f2;
   padding-left: 20px;
 }
 
@@ -674,6 +676,7 @@ input:checked + .checkbox-indicator::after {
 
 .input-date:hover {
   background-color: #ebebeb;
+  border: 2px solid #ebebeb;
 }
 
 .input-bg:focus {
@@ -687,32 +690,35 @@ input:checked + .checkbox-indicator::after {
 }
 
 .calendar-image-arrival {
-  position: absolute;
-  right: 59px;
-  top: 63px;
+  position: relative;
+  left: -8.2%;
+  transform: translateY(22%);
   border: none;
   background: rgba(242, 242, 242, 0);
   outline: none;
 }
 
 .calendar-image-turnout {
-  position: absolute;
-  right: 60px;
-  top: 130px;
+  position: relative;
+  left: -8.2%;
+  transform: translateY(22%);
   border: none;
   background: rgba(242, 242, 242, 0);
   outline: none;
 }
 
-.calendar-image {
+.calendar-image-arrival,
+.calendar-image-turnout {
   fill: #a9a9a9;
 }
 
-.calendar-image:hover {
+.calendar-image-arrival:hover,
+.calendar-image-turnout:hover {
   fill: #000000;
 }
 
-.calendar-image:active {
+.calendar-image-arrival:active,
+.calendar-image-turnout:active {
   fill: #81b3d2;
 }
 
@@ -924,7 +930,7 @@ input:checked + .checkbox-indicator::after {
   flex: 0 0 25%;
   max-width: 25%;
   box-sizing: border-box;
-  padding: 27px 0 0 178.5px;
+  padding: 14px 0 0 138.5px;
 }
 
 .col-hotel {
@@ -1164,3 +1170,7 @@ appearance: none;
 -moz-appearance: textfield;
 appearance: textfield;
 }
+
+.input-date::-ms-clear {
+  display: none;
+  }
