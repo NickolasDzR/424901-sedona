@@ -64,7 +64,6 @@ a {
   width: 1200px;
 }
 
-
 .filter-conteiner {
   display: flex;
   flex-wrap: wrap;
@@ -106,8 +105,15 @@ input:checked + .checkbox-indicator::after {
   background: none;
 }
 
+input:disabled + .checkbox-indicator {
+  opacity: 0.5;
+}
 
-
+[type="checkbox"]:focus + .checkbox-indicator {
+  outline:none;
+  -webkit-box-shadow: 0px 0px 5px #4D90FE;
+  box-shadow: 0px 0px 5px #4D90FE;
+}
 
 .filter-find-row {
   display: flex;
@@ -636,7 +642,7 @@ input:checked + .checkbox-indicator::after {
   text-transform: uppercase;
   font-weight: bold;
   outline: none;
-  padding: 10px;
+  padding: 8px;
 }
 
 .booking-form input[type="number"] {
@@ -644,10 +650,11 @@ input:checked + .checkbox-indicator::after {
 }
 
 .booking-form input[type="text"] {
-  padding: 8px 6px 8px 11px;
+  padding: 8px 34px 8px 11px;
 }
 
 .form-arrival {
+  position: relative;
   margin-bottom: 31px;
 }
 
@@ -659,13 +666,13 @@ input:checked + .checkbox-indicator::after {
   background-color: #f2f2f2;
   width: 36px;
   height: 18px;
-  border: none;
+  border: 2px solid #f2f2f2;
   text-align: center
 }
 
 .input-date {
   background-color: #f2f2f2;
-  width: 326px;
+  width: 298px;
   border: 2px solid #f2f2f2;
   padding-left: 20px;
 }
@@ -674,24 +681,26 @@ input:checked + .checkbox-indicator::after {
   background-color: #f2f2f2;
 }
 
-.input-date:hover {
+.input-date:hover,
+.input-bg:hover {
   background-color: #ebebeb;
   border: 2px solid #ebebeb;
 }
+
 
 .input-bg:focus {
   background-color: #f2f2f2;
 }
 
-.input-date:focus {
+.input-date:focus,
+.input-bg:focus {
   background-color: #fff;
   border: 2px solid #e5e5e5;
-  width: 322px;
 }
 
 .calendar-image-arrival {
-  position: relative;
-  left: -8.2%;
+  position: absolute;
+  left: 84.9%;
   transform: translateY(22%);
   border: none;
   background: rgba(242, 242, 242, 0);
@@ -1030,7 +1039,7 @@ input:checked + .checkbox-indicator::after {
 }
 
 .range-toggle:hover {
-  background-color: #1c4f80;
+  border: 9px solid #fff;
 }
 
 .range-toggle-min {
