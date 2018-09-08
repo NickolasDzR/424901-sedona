@@ -38,6 +38,7 @@ a {
 
 .header-logo {
   background-image: url(../img/background-photo.jpg);
+  background-color: #263a42;
   background-repeat: no-repeat;
   padding: 74.7px 0 80px;
   position: relative;
@@ -53,11 +54,12 @@ a {
   left: 0;
   right: 0;
   background-image: url(../img/polygon.svg);
-  background-size: 100% 100%;
+  background-size: 100%;
 }
 
 .filtering {
   background-image: url(../img/filter-background.jpg);
+  background-color: #4a515a;
   background-repeat: no-repeat;
   color: #fff;
   height: 215.5px;
@@ -797,10 +799,28 @@ input:disabled+.checkbox-indicator {
 
 .stonebridge-image {
   display: block;
+  background-color: #d19f88;
 }
 
 .hotel-img {
   display: block;
+  background-color: #99a492;
+}
+
+.map-image {
+  background-color: #cbdda9;
+}
+
+.hotel-image-first {
+  background-color: #bf87a3;
+}
+
+.hotel-image-second {
+  background-color: #bfcee4;
+}
+
+.hotel-image-third {
+  background-color: #849059;
 }
 
 .list-advantage {
@@ -1138,6 +1158,7 @@ input:disabled+.checkbox-indicator {
 
 .social {
   display: inline-flex;
+  vertical-align: middle;
   justify-content: center;
   align-items: center;
   font-size: 14px;
