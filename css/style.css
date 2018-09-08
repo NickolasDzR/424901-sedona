@@ -24,7 +24,7 @@ a {
   box-shadow: 0 0 15px 5px rgba(129, 129, 129, 0.2);
 }
 
-.visually-hidden  {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -76,7 +76,7 @@ a {
   cursor: pointer;
 }
 
-input + .checkbox-indicator {
+input+.checkbox-indicator {
   position: absolute;
   top: -2.5px;
   left: 1px;
@@ -85,7 +85,7 @@ input + .checkbox-indicator {
   background-image: url(../img/checkbox-off.svg);
 }
 
-input:checked + .checkbox-indicator {
+input:checked+.checkbox-indicator {
   position: absolute;
   top: -2.5px;
   left: 1px;
@@ -94,8 +94,8 @@ input:checked + .checkbox-indicator {
   background-image: none;
 }
 
-input:checked + .checkbox-indicator::before,
-input:checked + .checkbox-indicator::after {
+input:checked+.checkbox-indicator::before,
+input:checked+.checkbox-indicator::after {
   content: url(../img/checkbox-on.svg);
   position: absolute;
   top: 0px;
@@ -105,12 +105,12 @@ input:checked + .checkbox-indicator::after {
   background: none;
 }
 
-input:disabled + .checkbox-indicator {
+input:disabled+.checkbox-indicator {
   opacity: 0.5;
 }
 
-[type="checkbox"]:focus + .checkbox-indicator {
-  outline:none;
+[type="checkbox"]:focus+.checkbox-indicator {
+  outline: none;
   -webkit-box-shadow: 0px 0px 5px #4D90FE;
   box-shadow: 0px 0px 5px #4D90FE;
 }
@@ -459,11 +459,6 @@ input:disabled + .checkbox-indicator {
   border: none;
 }
 
-.strange-name {
-  display: inline-block;
-  min-width: 110px;
-}
-
 .plus,
 .minus {
   font-weight: bold;
@@ -484,34 +479,19 @@ input:disabled + .checkbox-indicator {
 .plus:active,
 .minus:active {
   color: #81b3d2;
-
 }
 
 .calendar-image-arrival:focus,
 .calendar-image-turnout:focus,
 .plus:focus,
-.minus:focus{
+.minus:focus {
   border: 0.5px solid #4D90FE;
   box-shadow: 0px 0px 5px #4D90FE;
 }
 
-.plus-style {
-  display: inline-block;
-  font-weight: bold;
-  font-size: 27px;
-  margin-left: -8px;
-}
-
-.minus-style {
-  display: inline-block;
-  font-weight: bold;
-  font-size: 28px;
-  margin-left: 4px;
-  margin-bottom: 4px;
-}
-
 .button-blue {
   display: inline-block;
+  vertical-align: top;
   font-weight: bold;
   padding: 6px 16px;
   margin-right: 3px;
@@ -522,6 +502,7 @@ input:disabled + .checkbox-indicator {
 
 .button-grow {
   display: inline-block;
+  vertical-align: top;
   font-size: 14px;
   font-weight: bold;
   padding: 5.8px 17px;
@@ -568,7 +549,7 @@ input:disabled + .checkbox-indicator {
 .button-grow:active,
 .button-find:active {
   background-color: #503e32;
-  color:  rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .menu-link:active,
@@ -590,7 +571,6 @@ input:disabled + .checkbox-indicator {
   align-items: center;
   display: flex;
   margin-right: 54px;
-
 }
 
 .second-form {
@@ -602,6 +582,7 @@ input:disabled + .checkbox-indicator {
 .label-style-old,
 .label-style-kid {
   display: inline-block;
+  vertical-align: middle;
   font-weight: bold;
   font-size: 14px;
   min-width: 100px;
@@ -642,7 +623,6 @@ input:disabled + .checkbox-indicator {
   padding: 56.5px 16px 57.2px 55px;
   text-align: left;
 }
-
 
 .booking-form input[type="text"],
 .booking-form input[type="number"] {
@@ -695,7 +675,6 @@ input:disabled + .checkbox-indicator {
   background-color: #ebebeb;
   border: 2px solid #ebebeb;
 }
-
 
 .input-bg:focus {
   background-color: #f2f2f2;
@@ -751,7 +730,7 @@ input:disabled + .checkbox-indicator {
 }
 
 .logo-academy:active {
-  fill:  rgba(0, 0, 0, 0.3);
+  fill: rgba(0, 0, 0, 0.3);
 }
 
 .main-menu-navigation {
@@ -802,7 +781,6 @@ input:disabled + .checkbox-indicator {
   box-sizing: border-box;
   text-align: center;
 }
-
 
 .bridge {
   flex: 0 0 33.33334%;
@@ -872,6 +850,7 @@ input:disabled + .checkbox-indicator {
 
 .controller-position {
   display: inline-block;
+  vertical-align: middle;
   list-style: none;
 }
 
@@ -918,7 +897,7 @@ input:disabled + .checkbox-indicator {
 }
 
 .variant-hotel-three .star-image {
-  margin:0 -4px 0 4.5px;
+  margin: 0 -4px 0 4.5px;
 }
 
 .raiting:nth-child(3) {
@@ -993,6 +972,7 @@ input:disabled + .checkbox-indicator {
 .min-price,
 .max-price {
   display: inline-block;
+  vertical-align: middle;
   font-size: 14px;
   line-height: 38px;
   margin-top: -4px;
@@ -1014,7 +994,7 @@ input:disabled + .checkbox-indicator {
   margin: 0;
   color: inherit;
   font: inherit;
-  background:none;
+  background: none;
   border: none;
   line-height: 1;
 }
@@ -1076,6 +1056,7 @@ input:disabled + .checkbox-indicator {
 
 .raiting {
   display: inline-block;
+  vertical-align: middle;
   color: #666;
   width: 98px;
   background-color: #f2f2f2;
@@ -1085,8 +1066,9 @@ input:disabled + .checkbox-indicator {
 }
 
 .inner {
-  min-width: 111.2px;
   display: inline-block;
+  vertical-align: top;
+  min-width: 111.2px;
 }
 
 .down-button {
@@ -1181,15 +1163,15 @@ input:disabled + .checkbox-indicator {
 
 .input-bg::-webkit-outer-spin-button,
 .input-bg::-webkit-inner-spin-button {
--webkit-appearance: none;
-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .input-bg[type='number'] {
--moz-appearance: textfield;
-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .input-date::-ms-clear {
   display: none;
-  }
+}
