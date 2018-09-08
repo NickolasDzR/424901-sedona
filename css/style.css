@@ -484,6 +484,15 @@ input:disabled + .checkbox-indicator {
 .plus:active,
 .minus:active {
   color: #81b3d2;
+
+}
+
+.calendar-image-arrival:focus,
+.calendar-image-turnout:focus,
+.plus:focus,
+.minus:focus{
+  border: 0.5px solid #4D90FE;
+  box-shadow: 0px 0px 5px #4D90FE;
 }
 
 .plus-style {
@@ -626,11 +635,11 @@ input:disabled + .checkbox-indicator {
   display: block;
   position: absolute;
   top: 100%;
-  left: 0;
-  right: 0;
+  left: 2px;
+  right: 2px;
   background-color: white;
   height: 281.5px;
-  padding: 56.5px 17px 57.2px 57px;
+  padding: 56.5px 16px 57.2px 55px;
   text-align: left;
 }
 
@@ -700,7 +709,7 @@ input:disabled + .checkbox-indicator {
 
 .calendar-image-arrival {
   position: absolute;
-  left: 84.9%;
+  left: 85%;
   transform: translateY(22%);
   border: none;
   background: rgba(242, 242, 242, 0);
@@ -708,8 +717,8 @@ input:disabled + .checkbox-indicator {
 }
 
 .calendar-image-turnout {
-  position: relative;
-  left: -8.2%;
+  position: absolute;
+  left: 84.1%;
   transform: translateY(22%);
   border: none;
   background: rgba(242, 242, 242, 0);
@@ -1007,6 +1016,7 @@ input:disabled + .checkbox-indicator {
   font: inherit;
   background:none;
   border: none;
+  line-height: 1;
 }
 
 .range-controls {
