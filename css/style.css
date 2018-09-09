@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', "Arial", sans-serif;
   font-size: 14px;
   color: #000000;
   text-transform: uppercase;
@@ -61,9 +61,10 @@ a {
   background-image: url(../img/filter-background.jpg);
   background-color: #4a515a;
   background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
-  height: 215.5px;
   width: 1200px;
+  padding-bottom: 11.1px;
 }
 
 .filter-conteiner {
@@ -301,7 +302,7 @@ input:disabled+.checkbox-indicator {
   font-size: 21px;
   line-height: 21px;
   color: #ffffff;
-  padding: 27px 0 3.5px 0;
+  padding: 27px 83px 3.5px 83px;
 }
 
 .style-list-one {
@@ -520,7 +521,7 @@ input:disabled+.checkbox-indicator {
   color: #81b3d2;
 }
 
-.dashed:hover {
+.dashed:active {
   border-bottom: 0px;
 }
 
