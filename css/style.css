@@ -610,6 +610,10 @@ input:disabled+.checkbox-indicator {
 }
 
 .form-show {
+  display: none;
+}
+
+.form-unshow {
   display: block;
   position: absolute;
   top: 100%;
@@ -619,6 +623,8 @@ input:disabled+.checkbox-indicator {
   height: 281.5px;
   padding: 56.5px 16px 57.2px 55px;
   text-align: left;
+  animation-name: bounce;
+  animation-duration: 0.8s;
 }
 
 .booking-form input[type="text"],
@@ -1172,3 +1178,10 @@ input:disabled+.checkbox-indicator {
 .input-date::-ms-clear {
   display: none;
 }
+
+@keyframes bounce {
+0% {transform: translatey(300px)}
+100% {transform: translateY(0px)}
+}
+
+
