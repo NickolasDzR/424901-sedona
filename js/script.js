@@ -1,8 +1,8 @@
 var button = document.querySelector(".button-find");
 var popup = document.querySelector(".form-show");
-var form = popup.querySelector(".show-variant");
-var text = popup.querySelector("[type=text]");
-var number = popup.querySelector("[type=number]");
+var form = document.querySelector("form");
+var text = popup.querySelector("[name=date-arrival]");
+var number = popup.querySelector("[name=number]");
 
 button.addEventListener('click', function (evt) {
   evt.preventDefault();
