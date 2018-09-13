@@ -609,10 +609,6 @@ input:disabled+.checkbox-indicator {
   border: none;
 }
 
-.form-show {
-  display: none;
-}
-
 .form-unshow {
   display: block;
   position: absolute;
@@ -627,6 +623,27 @@ input:disabled+.checkbox-indicator {
   animation-duration: 0.8s;
 }
 
+.form-show {
+  display: none;
+}
+
+/*
+
+.animation-form {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 2px;
+  right: 2px;
+  background-color: white;
+  height: 281.5px;
+  padding: 56.5px 16px 57.2px 55px;
+  text-align: left;
+  animation-name: bounce;
+  animation-duration: 0.8s;
+}
+
+*/
 
 .booking-form input[type="text"],
 .booking-form input[type="number"] {

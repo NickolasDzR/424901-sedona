@@ -1,12 +1,16 @@
 var button = document.querySelector(".button-find");
-var popup = document.querySelector(".form-show");
+var popup = document.querySelector(".form-unshow");
 var form = document.querySelector("form");
 var text = popup.querySelector("[name=date-arrival]");
 var number = popup.querySelector("[name=number]");
 
+document.addEventListener("DOMContentLoaded", function() {
+  form.classList.add("form-show");
+});
+
 button.addEventListener('click', function (evt) {
   evt.preventDefault();
-
+  popup.classList.remove("modal-error");
   popup.classList.toggle("form-unshow");
   text.focus();
 
@@ -19,6 +23,13 @@ window.addEventListener("keydown", function (evt) {
       popup.classList.remove("form-unshow");
     }
   }
+});
+
+
+button.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.remove("modal-show");
+  popup.classList.remove("modal-error");
 });
 
 form.addEventListener("submit", function (evt) {
