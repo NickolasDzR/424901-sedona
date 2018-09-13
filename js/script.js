@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 button.addEventListener('click', function (evt) {
   evt.preventDefault();
-  popup.classList.remove("modal-error");
   popup.classList.toggle("form-unshow");
   text.focus();
 
