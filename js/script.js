@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 button.addEventListener('click', function (evt) {
   evt.preventDefault();
-  popup.classList.toggle("form-unshow");
+  popup.classList.toggle("animation-form");
   text.focus();
 
 });

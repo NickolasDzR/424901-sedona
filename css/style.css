@@ -627,8 +627,6 @@ input:disabled+.checkbox-indicator {
   display: none;
 }
 
-/*
-
 .animation-form {
   display: block;
   position: absolute;
@@ -643,7 +641,6 @@ input:disabled+.checkbox-indicator {
   animation-duration: 0.8s;
 }
 
-*/
 
 .booking-form input[type="text"],
 .booking-form input[type="number"] {
