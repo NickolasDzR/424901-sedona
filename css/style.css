@@ -44,6 +44,12 @@ a {
   position: relative;
 }
 
+.sedon-map {
+  background-image: url(../img/map.jpg);
+  min-height: 590px;
+  width: 1200px;
+}
+
 .header-logo::after {
   content: "";
   display: block;
