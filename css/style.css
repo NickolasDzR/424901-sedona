@@ -46,7 +46,7 @@ a {
 
 .sedon-map {
   background-image: url(../img/map.jpg);
-  min-height: 590px;
+  min-height: 593px;
   width: 1200px;
 }
 
@@ -192,7 +192,7 @@ input:disabled+.checkbox-indicator {
 .index-footer {
   position: absolute;
   width: 1200px;
-  height: 120px;
+  height: 124px;
   margin-top: -123.2px;
   background-color: rgba(249, 251, 246, 0.9)
 }
@@ -469,7 +469,7 @@ input:disabled+.checkbox-indicator {
   border: none;
   background-color: #f2f2f2;
   font-size: 25px;
-  width: 31.2px;
+  width: 37.6px;
   height: 38px;
   outline: none;
 }
@@ -573,7 +573,7 @@ input:disabled+.checkbox-indicator {
 .first-form {
   align-items: center;
   display: flex;
-  margin-right: 54px;
+  margin-right: 53px;
 }
 
 .second-form {
@@ -585,14 +585,14 @@ input:disabled+.checkbox-indicator {
 .label-style-old,
 .label-style-kid {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: baseline;
   font-weight: bold;
   font-size: 14px;
   min-width: 100px;
 }
 
 .label-style-old {
-  margin-right: 10px;
+  margin-right: 11px;
 }
 
 .label-style-kid {
@@ -641,7 +641,7 @@ input:disabled+.checkbox-indicator {
   right: 2px;
   background-color: white;
   height: 281.5px;
-  padding: 56.5px 16px 57.2px 55px;
+  padding: 55.5px 16px 57.2px 55.2px;
   text-align: left;
   animation-name: bounce;
   animation-duration: 0.8s;
@@ -659,20 +659,20 @@ input:disabled+.checkbox-indicator {
 }
 
 .booking-form input[type="number"] {
-  width: 33px;
+  width: 19px;
 }
 
 .booking-form input[type="text"] {
-  padding: 8px 34px 8px 11px;
+  padding: 8.6px 34px 9px 10.1px;
 }
 
 .form-arrival {
   position: relative;
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 }
 
 .form-turnout {
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 }
 
 .input-bg {
@@ -713,7 +713,7 @@ input:disabled+.checkbox-indicator {
 .calendar-image-arrival {
   position: absolute;
   left: 85%;
-  transform: translateY(22%);
+  transform: translateY(28%);
   border: none;
   background: rgba(242, 242, 242, 0);
   outline: none;
@@ -928,7 +928,7 @@ input:disabled+.checkbox-indicator {
 }
 
 .col-input {
-  width: 52.4px;
+  width: 38.4px;
 }
 
 .col {
@@ -1201,7 +1201,7 @@ input:disabled+.checkbox-indicator {
 }
 
 @keyframes bounce {
-0% {transform: translatey(200px)}
+0% {transform: translatey(150px)}
 100% {transform: translateY(0px)}
 }
 
