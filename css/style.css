@@ -589,7 +589,7 @@ input:disabled+.checkbox-indicator {
   vertical-align: baseline;
   font-weight: bold;
   font-size: 14px;
-  min-width: 100px;
+  width: 100px;
 }
 
 .label-style-old {
