@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   color: #000000;
   text-transform: uppercase;
@@ -439,11 +439,12 @@ input:disabled+.checkbox-indicator {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 21px;
-  padding: 30px 138px;
   background-color: #766257;
   color: #ffffff;
   margin-top: 34.7px;
   border: none;
+  width: 568px;
+  height: 84.1px;
 }
 
 .for-cost {
