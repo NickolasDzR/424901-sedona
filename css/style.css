@@ -1191,7 +1191,7 @@ input:disabled+.checkbox-indicator {
   appearance: none;
 }
 
-.input-bg[type='number'] {
+.input-bg[type="number"] {
   -moz-appearance: textfield;
   appearance: textfield;
 }
