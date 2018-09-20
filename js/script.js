@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   form.classList.add("form-show");
 });
 
-button.addEventListener('click', function (evt) {
+button.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.toggle("animation-form");
   text.focus();
